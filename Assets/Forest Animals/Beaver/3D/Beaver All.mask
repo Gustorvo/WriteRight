@@ -1,0 +1,198 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!319 &31900000
+AvatarMask:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Beaver All
+  m_Mask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+  m_Elements:
+  - m_Path: 
+    m_Weight: 1
+  - m_Path: Beaver
+    m_Weight: 1
+  - m_Path: Beaver/Beaver Pelvis
+    m_Weight: 1
+  - m_Path: Beaver/Beaver Pelvis/Beaver L Thigh
+    m_Weight: 1
+  - m_Path: Beaver/Beaver Pelvis/Beaver L Thigh/Beaver L Calf
+    m_Weight: 1
+  - m_Path: Beaver/Beaver Pelvis/Beaver L Thigh/Beaver L Calf/Beaver L Foot
+    m_Weight: 1
+  - m_Path: Beaver/Beaver Pelvis/Beaver L Thigh/Beaver L Calf/Beaver L Foot/Beaver
+      L Toe0
+    m_Weight: 1
+  - m_Path: Beaver/Beaver Pelvis/Beaver R Thigh
+    m_Weight: 1
+  - m_Path: Beaver/Beaver Pelvis/Beaver R Thigh/Beaver R Calf
+    m_Weight: 1
+  - m_Path: Beaver/Beaver Pelvis/Beaver R Thigh/Beaver R Calf/Beaver R Foot
+    m_Weight: 1
+  - m_Path: Beaver/Beaver Pelvis/Beaver R Thigh/Beaver R Calf/Beaver R Foot/Beaver
+      R Toe0
+    m_Weight: 1
+  - m_Path: Beaver/Beaver Pelvis/Beaver Spine
+    m_Weight: 1
+  - m_Path: Beaver/Beaver Pelvis/Beaver Spine/Beaver Spine1
+    m_Weight: 1
+  - m_Path: Beaver/Beaver Pelvis/Beaver Spine/Beaver Spine1/Beaver Spine2
+    m_Weight: 1
+  - m_Path: Beaver/Beaver Pelvis/Beaver Spine/Beaver Spine1/Beaver Spine2/Beaver
+      L Clavicle
+    m_Weight: 1
+  - m_Path: Beaver/Beaver Pelvis/Beaver Spine/Beaver Spine1/Beaver Spine2/Beaver
+      L Clavicle/Beaver L UpperArm
+    m_Weight: 1
+  - m_Path: Beaver/Beaver Pelvis/Beaver Spine/Beaver Spine1/Beaver Spine2/Beaver
+      L Clavicle/Beaver L UpperArm/Beaver L Forearm
+    m_Weight: 1
+  - m_Path: Beaver/Beaver Pelvis/Beaver Spine/Beaver Spine1/Beaver Spine2/Beaver
+      L Clavicle/Beaver L UpperArm/Beaver L Forearm/Beaver L Hand
+    m_Weight: 1
+  - m_Path: Beaver/Beaver Pelvis/Beaver Spine/Beaver Spine1/Beaver Spine2/Beaver
+      L Clavicle/Beaver L UpperArm/Beaver L Forearm/Beaver L Hand/Beaver L Finger0
+    m_Weight: 1
+  - m_Path: Beaver/Beaver Pelvis/Beaver Spine/Beaver Spine1/Beaver Spine2/Beaver
+      L Clavicle/Beaver L UpperArm/Beaver L Forearm/Beaver L Hand/Beaver L Finger0/Beaver
+      L Finger01
+    m_Weight: 1
+  - m_Path: Beaver/Beaver Pelvis/Beaver Spine/Beaver Spine1/Beaver Spine2/Beaver
+      L Clavicle/Beaver L UpperArm/Beaver L Forearm/Beaver L Hand/Beaver L Finger1
+    m_Weight: 1
+  - m_Path: Beaver/Beaver Pelvis/Beaver Spine/Beaver Spine1/Beaver Spine2/Beaver
+      L Clavicle/Beaver L UpperArm/Beaver L Forearm/Beaver L Hand/Beaver L Finger1/Beaver
+      L Finger11
+    m_Weight: 1
+  - m_Path: Beaver/Beaver Pelvis/Beaver Spine/Beaver Spine1/Beaver Spine2/Beaver
+      L Clavicle/Beaver L UpperArm/Beaver L Forearm/Beaver L Hand/Beaver L Finger2
+    m_Weight: 1
+  - m_Path: Beaver/Beaver Pelvis/Beaver Spine/Beaver Spine1/Beaver Spine2/Beaver
+      L Clavicle/Beaver L UpperArm/Beaver L Forearm/Beaver L Hand/Beaver L Finger2/Beaver
+      L Finger21
+    m_Weight: 1
+  - m_Path: Beaver/Beaver Pelvis/Beaver Spine/Beaver Spine1/Beaver Spine2/Beaver
+      L Clavicle/Beaver L UpperArm/Beaver L Forearm/Beaver L Hand/Beaver L Finger3
+    m_Weight: 1
+  - m_Path: Beaver/Beaver Pelvis/Beaver Spine/Beaver Spine1/Beaver Spine2/Beaver
+      L Clavicle/Beaver L UpperArm/Beaver L Forearm/Beaver L Hand/Beaver L Finger3/Beaver
+      L Finger31
+    m_Weight: 1
+  - m_Path: Beaver/Beaver Pelvis/Beaver Spine/Beaver Spine1/Beaver Spine2/Beaver
+      Neck
+    m_Weight: 1
+  - m_Path: Beaver/Beaver Pelvis/Beaver Spine/Beaver Spine1/Beaver Spine2/Beaver
+      Neck/Beaver Head
+    m_Weight: 1
+  - m_Path: Beaver/Beaver Pelvis/Beaver Spine/Beaver Spine1/Beaver Spine2/Beaver
+      Neck/Beaver Head/Beaver Hair
+    m_Weight: 1
+  - m_Path: Beaver/Beaver Pelvis/Beaver Spine/Beaver Spine1/Beaver Spine2/Beaver
+      Neck/Beaver Head/Beaver Jaw
+    m_Weight: 1
+  - m_Path: Beaver/Beaver Pelvis/Beaver Spine/Beaver Spine1/Beaver Spine2/Beaver
+      Neck/Beaver Head/Beaver Jaw/Beaver L Lower Mouth
+    m_Weight: 1
+  - m_Path: Beaver/Beaver Pelvis/Beaver Spine/Beaver Spine1/Beaver Spine2/Beaver
+      Neck/Beaver Head/Beaver Jaw/Beaver R Lower Mouth
+    m_Weight: 1
+  - m_Path: Beaver/Beaver Pelvis/Beaver Spine/Beaver Spine1/Beaver Spine2/Beaver
+      Neck/Beaver Head/Beaver Jaw/Beaver Tongue
+    m_Weight: 1
+  - m_Path: Beaver/Beaver Pelvis/Beaver Spine/Beaver Spine1/Beaver Spine2/Beaver
+      Neck/Beaver Head/Beaver Jaw/Beaver Tongue/Beaver Tongue02
+    m_Weight: 1
+  - m_Path: Beaver/Beaver Pelvis/Beaver Spine/Beaver Spine1/Beaver Spine2/Beaver
+      Neck/Beaver Head/Beaver L Ear
+    m_Weight: 1
+  - m_Path: Beaver/Beaver Pelvis/Beaver Spine/Beaver Spine1/Beaver Spine2/Beaver
+      Neck/Beaver Head/Beaver L Eye
+    m_Weight: 1
+  - m_Path: Beaver/Beaver Pelvis/Beaver Spine/Beaver Spine1/Beaver Spine2/Beaver
+      Neck/Beaver Head/Beaver L Eyebrow
+    m_Weight: 1
+  - m_Path: Beaver/Beaver Pelvis/Beaver Spine/Beaver Spine1/Beaver Spine2/Beaver
+      Neck/Beaver Head/Beaver L Lower Eyelid
+    m_Weight: 1
+  - m_Path: Beaver/Beaver Pelvis/Beaver Spine/Beaver Spine1/Beaver Spine2/Beaver
+      Neck/Beaver Head/Beaver L Mouth
+    m_Weight: 1
+  - m_Path: Beaver/Beaver Pelvis/Beaver Spine/Beaver Spine1/Beaver Spine2/Beaver
+      Neck/Beaver Head/Beaver L Upper Eyelid
+    m_Weight: 1
+  - m_Path: Beaver/Beaver Pelvis/Beaver Spine/Beaver Spine1/Beaver Spine2/Beaver
+      Neck/Beaver Head/Beaver L Upper Mouth
+    m_Weight: 1
+  - m_Path: Beaver/Beaver Pelvis/Beaver Spine/Beaver Spine1/Beaver Spine2/Beaver
+      Neck/Beaver Head/Beaver Nose
+    m_Weight: 1
+  - m_Path: Beaver/Beaver Pelvis/Beaver Spine/Beaver Spine1/Beaver Spine2/Beaver
+      Neck/Beaver Head/Beaver R Ear
+    m_Weight: 1
+  - m_Path: Beaver/Beaver Pelvis/Beaver Spine/Beaver Spine1/Beaver Spine2/Beaver
+      Neck/Beaver Head/Beaver R Eye
+    m_Weight: 1
+  - m_Path: Beaver/Beaver Pelvis/Beaver Spine/Beaver Spine1/Beaver Spine2/Beaver
+      Neck/Beaver Head/Beaver R Eyebrow
+    m_Weight: 1
+  - m_Path: Beaver/Beaver Pelvis/Beaver Spine/Beaver Spine1/Beaver Spine2/Beaver
+      Neck/Beaver Head/Beaver R Lower Eyelid
+    m_Weight: 1
+  - m_Path: Beaver/Beaver Pelvis/Beaver Spine/Beaver Spine1/Beaver Spine2/Beaver
+      Neck/Beaver Head/Beaver R Mouth
+    m_Weight: 1
+  - m_Path: Beaver/Beaver Pelvis/Beaver Spine/Beaver Spine1/Beaver Spine2/Beaver
+      Neck/Beaver Head/Beaver R Upper Eyelid
+    m_Weight: 1
+  - m_Path: Beaver/Beaver Pelvis/Beaver Spine/Beaver Spine1/Beaver Spine2/Beaver
+      Neck/Beaver Head/Beaver R Upper Mouth
+    m_Weight: 1
+  - m_Path: Beaver/Beaver Pelvis/Beaver Spine/Beaver Spine1/Beaver Spine2/Beaver
+      R Clavicle
+    m_Weight: 1
+  - m_Path: Beaver/Beaver Pelvis/Beaver Spine/Beaver Spine1/Beaver Spine2/Beaver
+      R Clavicle/Beaver R UpperArm
+    m_Weight: 1
+  - m_Path: Beaver/Beaver Pelvis/Beaver Spine/Beaver Spine1/Beaver Spine2/Beaver
+      R Clavicle/Beaver R UpperArm/Beaver R Forearm
+    m_Weight: 1
+  - m_Path: Beaver/Beaver Pelvis/Beaver Spine/Beaver Spine1/Beaver Spine2/Beaver
+      R Clavicle/Beaver R UpperArm/Beaver R Forearm/Beaver R Hand
+    m_Weight: 1
+  - m_Path: Beaver/Beaver Pelvis/Beaver Spine/Beaver Spine1/Beaver Spine2/Beaver
+      R Clavicle/Beaver R UpperArm/Beaver R Forearm/Beaver R Hand/Beaver R Finger0
+    m_Weight: 1
+  - m_Path: Beaver/Beaver Pelvis/Beaver Spine/Beaver Spine1/Beaver Spine2/Beaver
+      R Clavicle/Beaver R UpperArm/Beaver R Forearm/Beaver R Hand/Beaver R Finger0/Beaver
+      R Finger01
+    m_Weight: 1
+  - m_Path: Beaver/Beaver Pelvis/Beaver Spine/Beaver Spine1/Beaver Spine2/Beaver
+      R Clavicle/Beaver R UpperArm/Beaver R Forearm/Beaver R Hand/Beaver R Finger1
+    m_Weight: 1
+  - m_Path: Beaver/Beaver Pelvis/Beaver Spine/Beaver Spine1/Beaver Spine2/Beaver
+      R Clavicle/Beaver R UpperArm/Beaver R Forearm/Beaver R Hand/Beaver R Finger1/Beaver
+      R Finger11
+    m_Weight: 1
+  - m_Path: Beaver/Beaver Pelvis/Beaver Spine/Beaver Spine1/Beaver Spine2/Beaver
+      R Clavicle/Beaver R UpperArm/Beaver R Forearm/Beaver R Hand/Beaver R Finger2
+    m_Weight: 1
+  - m_Path: Beaver/Beaver Pelvis/Beaver Spine/Beaver Spine1/Beaver Spine2/Beaver
+      R Clavicle/Beaver R UpperArm/Beaver R Forearm/Beaver R Hand/Beaver R Finger2/Beaver
+      R Finger21
+    m_Weight: 1
+  - m_Path: Beaver/Beaver Pelvis/Beaver Spine/Beaver Spine1/Beaver Spine2/Beaver
+      R Clavicle/Beaver R UpperArm/Beaver R Forearm/Beaver R Hand/Beaver R Finger3
+    m_Weight: 1
+  - m_Path: Beaver/Beaver Pelvis/Beaver Spine/Beaver Spine1/Beaver Spine2/Beaver
+      R Clavicle/Beaver R UpperArm/Beaver R Forearm/Beaver R Hand/Beaver R Finger3/Beaver
+      R Finger31
+    m_Weight: 1
+  - m_Path: Beaver/Beaver Pelvis/Beaver Tail
+    m_Weight: 1
+  - m_Path: Beaver/Beaver Pelvis/Beaver Tail/Beaver Tail02
+    m_Weight: 1
+  - m_Path: Beaver/Beaver Pelvis/Beaver Tail/Beaver Tail02/Beaver Tail03
+    m_Weight: 1
+  - m_Path: Beaver Mesh
+    m_Weight: 1
