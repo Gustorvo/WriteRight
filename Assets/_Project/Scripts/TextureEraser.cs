@@ -17,6 +17,7 @@ namespace _Project.Scripts
 	{
 		[SerializeField] private SphereToMeshCollisionDetector collision;
 
+		[SerializeField] private Transform meshTransform;
 
 		[SerializeField] private int minPixelPerGroup = 100;
 		[SerializeField] private bool saveTextureOnExit;
@@ -38,6 +39,7 @@ namespace _Project.Scripts
 
 		private void Start()
 		{
+			InitMeshRenderer(meshTransform);
 			InitWithDefaultTexture();
 		}
 
