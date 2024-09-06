@@ -1330,6 +1330,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 9040741508780558455, guid: a266ea46e711b4d8f99c27c3a280d5be, type: 3}
   m_PrefabInstance: {fileID: 1100090653}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &165585585 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4400860977171399285, guid: a266ea46e711b4d8f99c27c3a280d5be, type: 3}
+  m_PrefabInstance: {fileID: 1100090653}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &165585586
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1342,6 +1347,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5bfbba414ca71c8449e8cdb28ab24608, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tipPosition: {fileID: 165585589}
+  stylusHandler: {fileID: 729343581}
+  tipSize: 2
   collision: {fileID: 165585587}
   meshTransform: {fileID: 293825141}
   minPixelPerGroup: 20
@@ -1361,7 +1369,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14f57abb59f4ddc458a04945cd27c42f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  radius: 0.03
+  radius: 0.01
   meshCollider: {fileID: 293825142}
 --- !u!1773428102 &165585588
 ParentConstraint:
@@ -1390,6 +1398,22 @@ ParentConstraint:
   m_Sources:
   - sourceTransform: {fileID: 1577749884}
     weight: 1
+--- !u!114 &165585589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 165585583}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b17b6dc87b0346b79c2f33cf66c29e48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipOffset: 0
+  tipTransform: {fileID: 165585585}
+  stylusHandler: {fileID: 729343581}
+  meshCollider: {fileID: 293825142}
 --- !u!1 &180993143
 GameObject:
   m_ObjectHideFlags: 0
@@ -1773,6 +1797,7 @@ GameObject:
   - component: {fileID: 293825140}
   - component: {fileID: 293825139}
   - component: {fileID: 293825142}
+  - component: {fileID: 293825143}
   m_Layer: 6
   m_Name: A4
   m_TagString: Untagged
@@ -1838,13 +1863,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 293825137}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.85, z: 0.49}
+  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -0.18, y: 0.7690972, z: -0.54}
   m_LocalScale: {x: 1, y: 0.062721, z: 0.66603}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!64 &293825142
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1867,6 +1892,20 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &293825143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 293825137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 735b7601ea83de241920dee83de246a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textureEraser: {fileID: 165585586}
+  tipPosition: {fileID: 165585589}
 --- !u!1 &308948582
 GameObject:
   m_ObjectHideFlags: 0
@@ -6247,6 +6286,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 9040741508780558455, guid: a266ea46e711b4d8f99c27c3a280d5be, type: 3}
       insertIndex: -1
       addedObject: {fileID: 165585588}
+    - targetCorrespondingSourceObject: {fileID: 9040741508780558455, guid: a266ea46e711b4d8f99c27c3a280d5be, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 165585589}
   m_SourcePrefab: {fileID: 100100000, guid: a266ea46e711b4d8f99c27c3a280d5be, type: 3}
 --- !u!1 &1105254247
 GameObject:
@@ -11235,6 +11277,6 @@ SceneRoots:
   - {fileID: 705507995}
   - {fileID: 1522096905}
   - {fileID: 1873663571}
-  - {fileID: 1100090653}
   - {fileID: 729343580}
   - {fileID: 293825141}
+  - {fileID: 1100090653}

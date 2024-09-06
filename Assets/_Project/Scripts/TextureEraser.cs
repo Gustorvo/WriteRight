@@ -15,6 +15,9 @@ namespace _Project.Scripts
 	[RequireComponent(typeof(SphereToMeshCollisionDetector))]
 	public class TextureEraser : MonoBehaviour
 	{
+		[SerializeField] TipPosition tipPosition;
+		[SerializeField] private VrStylusHandler stylusHandler;
+		[SerializeField] int tipSize = 5;
 		[SerializeField] private SphereToMeshCollisionDetector collision;
 
 		[SerializeField] private Transform meshTransform;
@@ -46,6 +49,11 @@ namespace _Project.Scripts
 		private void Awake()
 		{
 			collision.OnBrushCollision += Erase;
+		}
+		public void Write(Vector2 uv)
+		{
+			if (!initialized) return;
+			modifier.DecreaseAlphaAtUVNonAlloc(uv, tipSize);
 		}
 
 		public void SetTargetTextureForLevel(int level)
@@ -148,11 +156,11 @@ namespace _Project.Scripts
 			}
 		}
 
-		private void Erase(BrushCollision brushCollision)
+		private void Erase(TipCollision tipCollision)
 		{
 			if (!initialized) return;
-			int size = Mathf.RoundToInt(Mathf.Lerp(7, 25, brushCollision.penetrationValue));
-			modifier.DecreaseAlphaAtUVNonAlloc(brushCollision.uv, size);
+			int size = Mathf.RoundToInt(Mathf.Lerp(7, 25, tipCollision.penetrationValue));
+			modifier.DecreaseAlphaAtUVNonAlloc(tipCollision.uv, size);
 		}
 
 

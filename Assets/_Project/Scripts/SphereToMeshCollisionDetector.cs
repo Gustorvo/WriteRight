@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace _Project.Scripts
 {
-	public struct BrushCollision
+	public struct TipCollision
 	{
 		/// <summary>
 		/// Point on the mesh in UV coordinates that was hit
@@ -15,7 +15,7 @@ namespace _Project.Scripts
 		/// </summary>
 		public float penetrationValue;
 
-		public BrushCollision(Vector2 hitTextureCoord, float penetrationValue)
+		public TipCollision(Vector2 hitTextureCoord, float penetrationValue)
 		{
 			uv = hitTextureCoord;
 			this.penetrationValue = penetrationValue;
@@ -39,7 +39,7 @@ namespace _Project.Scripts
 		private Collider[] hitColliders = new Collider[3] { null, null, null };
 		private bool init;
 
-		public event Action<BrushCollision> OnBrushCollision;
+		public event Action<TipCollision> OnBrushCollision;
 
 		private void Awake()
 		{
@@ -78,7 +78,7 @@ namespace _Project.Scripts
 				{
 					Vector2 uv = hit.textureCoord;
 					float penetration = Mathf.InverseLerp(rayDistance, 0, hit.distance);
-					OnBrushCollision?.Invoke(new BrushCollision(uv, penetration));
+					OnBrushCollision?.Invoke(new TipCollision(uv, penetration));
 					lastHitNormal = hit.normal;
 				}
 
