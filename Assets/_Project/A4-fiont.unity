@@ -1350,7 +1350,7 @@ MonoBehaviour:
   stylusHandler: {fileID: 729343581}
   tipSize: 8
   meshTransform: {fileID: 1919051460}
-  minPixelPerGroup: 20
+  minPixelPerGroup: 100
   saveTextureOnExit: 0
   savePath: Assets/_Project/Paint/SavedTextures/ModifiedTexture.png
   levelTextures:
@@ -1398,7 +1398,6 @@ MonoBehaviour:
   tipTransform: {fileID: 165585585}
   stylusHandler: {fileID: 729343581}
   meshCollider: {fileID: 1919051457}
-  missedFrames: []
 --- !u!1 &180993143
 GameObject:
   m_ObjectHideFlags: 0
@@ -6137,7 +6136,8 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 7
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3911681506184564244, guid: a266ea46e711b4d8f99c27c3a280d5be, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
