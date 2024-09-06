@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace _Project.Scripts
@@ -19,17 +20,22 @@ namespace _Project.Scripts
 		private Collider[] hitColliders = new Collider[3] { null, null, null };
 		private bool init;
 		private bool wasCollidingLastFrame;
-		public Vector2 Get() => MeshCastInDirection(out uvPosition) ? uvPosition : default;
+		public Vector2 Get() => TryMeshCastBidirectional(out uvPosition) ? uvPosition : default;
 		public event Action<Vector3> OnTipCollision;
 		public event Action<Vector3> OnTipCollisionStart;
 		public event Action<Vector3> OnTipCollisionEnd;
+		private Vector3 heightOffset => Vector3.up * 0.01f;
+
+		private bool startAdding;
+
 
 		private void FixedUpdate()
 		{
 			// check if tip is touching a surface
 			float tip = stylusHandler.CurrentState.tip_value;
-			if (tip > 0.00001f)
+			if (tip > 0.0001f)
 			{
+				startAdding = false;
 				if (!wasCollidingLastFrame)
 					OnTipCollisionStart?.Invoke(tipTransform.position);
 				OnTipCollision?.Invoke(tipTransform.position);
@@ -38,18 +44,22 @@ namespace _Project.Scripts
 			else
 			{
 				if (wasCollidingLastFrame)
+				{
 					OnTipCollisionEnd?.Invoke(tipTransform.position);
+				}
+
 				wasCollidingLastFrame = false;
 			}
 		}
 
-		bool MeshCastInDirection(out Vector2 uv)
+		private bool TryMeshCastBidirectional(out Vector2 uvPosition)
 		{
-			uv = default;
-			ray = new Ray(transform.position, Vector3.down);
-			if (meshCollider.Raycast(ray, out hit, 0.1f))
+			uvPosition = default;
+			Vector3 rayOrigin = transform.position + heightOffset;
+			ray = new Ray(rayOrigin, Vector3.down);
+			if (meshCollider.Raycast(ray, out hit, 0.02f))
 			{
-				uv = hit.textureCoord;
+				uvPosition = hit.textureCoord;
 				return true;
 			}
 

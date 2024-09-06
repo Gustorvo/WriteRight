@@ -12,13 +12,10 @@ namespace _Project.Scripts
 	/// Relies on the SphereToMeshCollisionDetector to detect collisions
 	/// To paint, use if (useNonAllocated) modifier.ModifyPixelsAtUVNonAlloc(uv, brushSize, (Color32)paintColor) or modifier.ModifyPixelsAtUV(uv, brushSize, (Color32)paintColor);
 	/// </summary>
-	[RequireComponent(typeof(SphereToMeshCollisionDetector))]
 	public class TextureEraser : MonoBehaviour
 	{
-		[SerializeField] TipPosition tipPosition;
 		[SerializeField] private VrStylusHandler stylusHandler;
 		[SerializeField] int tipSize = 5;
-		[SerializeField] private SphereToMeshCollisionDetector collision;
 
 		[SerializeField] private Transform meshTransform;
 
@@ -48,12 +45,15 @@ namespace _Project.Scripts
 
 		private void Awake()
 		{
-			collision.OnBrushCollision += Erase;
 		}
 		public void Write(Vector2 uv)
 		{
-			if (!initialized) return;
-			modifier.DecreaseAlphaAtUVNonAlloc(uv, tipSize);
+			if (!initialized)
+			{
+				Debug.LogError("Texture erazer not initialized");
+				return;
+			}
+			modifier.ModifyPixelsAtUVNonAlloc(uv, tipSize, Color.black);
 		}
 
 		public void SetTargetTextureForLevel(int level)
@@ -83,7 +83,7 @@ namespace _Project.Scripts
 				initialized = false;
 			}
 
-			collision.SetCollider(meshTransform);
+			//collision.SetCollider(meshTransform);
 			Debug.Log("Texture erazer: mesh renderer initialized");
 		}
 
@@ -124,7 +124,6 @@ namespace _Project.Scripts
 
 		private void OnDestroy()
 		{
-			collision.OnBrushCollision -= Erase;
 			modifier.OnGroupErased -= CheckGroupsErased;
 		}
 
