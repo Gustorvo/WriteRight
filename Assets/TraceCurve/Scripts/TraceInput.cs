@@ -151,7 +151,7 @@ namespace TraceCurve
 				if (!Camera.orthographic)
 				{
 					Debug.LogWarning("Camera should be orthographic! Fixing it...");
-					Camera.orthographic = true;
+					//Camera.orthographic = true;
 				}
 			}
 			if (BrushMover != null)

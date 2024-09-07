@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using NaughtyAttributes;
 using UnityEngine;
 
 namespace TraceCurve
@@ -10,6 +11,11 @@ namespace TraceCurve
 		public List<GeometryData> SegmentsData = new List<GeometryData>();
 		public bool UpdateSegmentsData = true;
 
+		[ Button]
+		private void RemoveAll()
+		{
+			SegmentsData = new List<GeometryData>();
+		}
 		private void OnEnable()
 		{
 			UpdateSegments();

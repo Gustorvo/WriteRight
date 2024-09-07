@@ -45,118 +45,133 @@ namespace TraceCurve.Editor
 		}
 
 		public override void OnInspectorGUI()
-		{
-			serializedObject.Update();
-			expandArray = EditorGUILayout.Foldout(expandArray, new GUIContent("Geometry"));
-			if (expandArray)
-			{
-				var list = serializedObject.FindProperty("Objects");
-				for (var i = 0; i < list.arraySize; i++)
-				{
-					var item = list.GetArrayElementAtIndex(i);
-					GUI.SetNextControlName(i.ToString());
-					EditorGUILayout.ObjectField(item);
-				}
-			}
+{
+    serializedObject.Update();
+    expandArray = EditorGUILayout.Foldout(expandArray, new GUIContent("Geometry"));
+    if (expandArray)
+    {
+        var list = serializedObject.FindProperty("Objects");
+        for (var i = 0; i < list.arraySize; i++)
+        {
+            var item = list.GetArrayElementAtIndex(i);
+            GUI.SetNextControlName(i.ToString());
+            EditorGUILayout.ObjectField(item);
+        }
+    }
 
-			if (!shouldFocusOnControl)
-			{
-				var focusedControlName = GUI.GetNameOfFocusedControl();
-				if (!string.IsNullOrEmpty(focusedControlName))
-				{
-					int.TryParse(focusedControlName, out focusedControlID);
-				}
-				else
-				{
-					focusedControlID = -1;
-				}
-			}
-			else
-			{
-				shouldFocusOnControl = false;
-				GUI.FocusControl(focusedControlID.ToString());
-			}
+    if (!shouldFocusOnControl)
+    {
+        var focusedControlName = GUI.GetNameOfFocusedControl();
+        if (!string.IsNullOrEmpty(focusedControlName))
+        {
+            int.TryParse(focusedControlName, out focusedControlID);
+        }
+        else
+        {
+            focusedControlID = -1;
+        }
+    }
+    else
+    {
+        shouldFocusOnControl = false;
+        GUI.FocusControl(focusedControlID.ToString());
+    }
 
-			var container = (GeometryContainer) target;
-			if (container != null)
-			{
-				var specialKey = (Event.current.alt || Event.current.shift) && focusedControlID != -1;
-				GUILayout.BeginHorizontal();
-				Geometry geometry = null;
-				if (GUILayout.Button("Connect New Line", GUILayout.ExpandWidth(true)))
-				{
-					EditorUtility.SetDirty(target);
-					geometry = AddGameObjectWithGeometry<Line>(container.transform, true);
-				}
-				if (GUILayout.Button("Connect New Curve", GUILayout.ExpandWidth(true)))
-				{
-					EditorUtility.SetDirty(target);
-					geometry = AddGameObjectWithGeometry<Curve>(container.transform, true);
-				}
-				GUILayout.EndHorizontal();
+    var container = (GeometryContainer)target;
+    if (container != null)
+    {
+        var specialKey = (Event.current.alt || Event.current.shift) && focusedControlID != -1;
+        GUILayout.BeginHorizontal();
+        Geometry geometry = null;
+        if (GUILayout.Button("Connect New Line", GUILayout.ExpandWidth(true)))
+        {
+            EditorUtility.SetDirty(target);
+            geometry = AddGameObjectWithGeometry<Line>(container.transform, true);
+        }
+        if (GUILayout.Button("Connect New Curve", GUILayout.ExpandWidth(true)))
+        {
+            EditorUtility.SetDirty(target);
+            geometry = AddGameObjectWithGeometry<Curve>(container.transform, true);
+        }
+        GUILayout.EndHorizontal();
 
-				GUILayout.BeginHorizontal();
-				if (GUILayout.Button("Add New Line", GUILayout.ExpandWidth(true)))
-				{
-					EditorUtility.SetDirty(target);
-					geometry = AddGameObjectWithGeometry<Line>(container.transform, false);
-				}
+        GUILayout.BeginHorizontal();
+        if (GUILayout.Button("Add New Line", GUILayout.ExpandWidth(true)))
+        {
+            EditorUtility.SetDirty(target);
+            geometry = AddGameObjectWithGeometry<Line>(container.transform, false);
+        }
 
-				if (GUILayout.Button("Add New Curve", GUILayout.ExpandWidth(true)))
-				{
-					EditorUtility.SetDirty(target);
-					geometry = AddGameObjectWithGeometry<Curve>(container.transform, false);
-				}
-				if (GUILayout.Button("Add New Dot", GUILayout.ExpandWidth(true)))
-				{
-					EditorUtility.SetDirty(target);
-					geometry = AddGameObjectWithGeometry<Dot>(container.transform, false);
-				}
+        if (GUILayout.Button("Add New Curve", GUILayout.ExpandWidth(true)))
+        {
+            EditorUtility.SetDirty(target);
+            geometry = AddGameObjectWithGeometry<Curve>(container.transform, false);
+        }
+        if (GUILayout.Button("Add New Dot", GUILayout.ExpandWidth(true)))
+        {
+            EditorUtility.SetDirty(target);
+            geometry = AddGameObjectWithGeometry<Dot>(container.transform, false);
+        }
+        GUILayout.EndHorizontal();
 
-				GUILayout.EndHorizontal();
-				GUILayout.BeginHorizontal();
-				EditorGUI.BeginDisabledGroup(focusedControlID == -1 || container.Objects.Count == 0);
-				if (GUILayout.Button("Clone Item", GUILayout.ExpandWidth(true)))
-				{
-					EditorUtility.SetDirty(target);
-					geometry = Instantiate(container.Objects[focusedControlID]);
-					geometry.transform.parent = container.transform;
-					specialKey = true;
-				}
-				if (GUILayout.Button("Remove Item", GUILayout.ExpandWidth(true)))
-				{
-					EditorUtility.SetDirty(target);
-					var item = container.Objects.ElementAt(focusedControlID);
-					container.Objects.RemoveAt(focusedControlID);
-					if (item != null)
-					{
-						DestroyImmediate(item.gameObject);
-					}
-					shouldFocusOnControl = true;
-					focusedControlID--;
-				}
-				EditorGUI.EndDisabledGroup();
-				GUILayout.EndHorizontal();
-				
-				if (geometry != null)
-				{
-					if (specialKey)
-					{
-						container.Objects.Insert(focusedControlID + 1, geometry);
-						focusedControlID++;
-					}
-					else
-					{
-						container.Objects.Add(geometry);
-						focusedControlID = container.Objects.Count - 1;
-					}
-					shouldFocusOnControl = true;
-				}
-				
-				Undo.RecordObject(target, "Change Target");
-			}
-			serializedObject.ApplyModifiedProperties();
-		}
+        GUILayout.BeginHorizontal();
+        EditorGUI.BeginDisabledGroup(focusedControlID == -1 || container.Objects.Count == 0);
+        if (GUILayout.Button("Clone Item", GUILayout.ExpandWidth(true)))
+        {
+            EditorUtility.SetDirty(target);
+            geometry = Instantiate(container.Objects[focusedControlID]);
+            geometry.transform.parent = container.transform;
+            specialKey = true;
+        }
+        if (GUILayout.Button("Remove Item", GUILayout.ExpandWidth(true)))
+        {
+            EditorUtility.SetDirty(target);
+            var item = container.Objects.ElementAt(focusedControlID);
+            container.Objects.RemoveAt(focusedControlID);
+            if (item != null)
+            {
+                DestroyImmediate(item.gameObject);
+            }
+            shouldFocusOnControl = true;
+            focusedControlID--;
+        }
+        EditorGUI.EndDisabledGroup();
+        GUILayout.EndHorizontal();
+
+        // New Button to Remove All Items
+        if (GUILayout.Button("Remove All Items", GUILayout.ExpandWidth(true)))
+        {
+            EditorUtility.SetDirty(target);
+            foreach (var item in container.Objects)
+            {
+                if (item != null)
+                {
+                    DestroyImmediate(item.gameObject);
+                }
+            }
+            container.Objects.Clear();
+        }
+
+        if (geometry != null)
+        {
+            if (specialKey)
+            {
+                container.Objects.Insert(focusedControlID + 1, geometry);
+                focusedControlID++;
+            }
+            else
+            {
+                container.Objects.Add(geometry);
+                focusedControlID = container.Objects.Count - 1;
+            }
+            shouldFocusOnControl = true;
+        }
+
+        Undo.RecordObject(target, "Change Target");
+    }
+    serializedObject.ApplyModifiedProperties();
+}
+
 
 		private static T AddGameObjectWithGeometry<T>(Transform container, bool shouldContinue) where T : Geometry
 		{
