@@ -9,30 +9,22 @@ using UnityEngine.Assertions;
 public enum BeaverState
 {
 	None,
-	Idle,
 	Introduction,
-	Instruction,
+	Idle,
 	Success
 }
 
-[Serializable]
-public struct BeaverStep
-{
-	public AudioClip clip;
-	public BeaverState state;
-
-	public bool IsNull()
-	{
-		return state.Equals(default(BeaverState));
-	}
-}
 
 public class BeaverController : MonoBehaviour
 {
-	[SerializeField] private List<BeaverStep> steps = new List<BeaverStep>();
+	[SerializeField] private AudioSource audioSource;
 	[SerializeField] Animator animator;
 
-	private BeaverState currentState = BeaverState.None;
+	[SerializeField] List<AudioClip> instrucionClips;
+
+	public BeaverState currentState = BeaverState.None;
+	private bool wasAudioPlaying = false;
+	private int level = 0;
 
 	private void Awake()
 	{
@@ -41,39 +33,89 @@ public class BeaverController : MonoBehaviour
 
 	private void Start()
 	{
+		level = 0;
 		PlayStep(BeaverState.Introduction);
 	}
+
+	public AudioClip GetAudioForLevel(int level) => instrucionClips[level];
 
 	public void PlayStep(BeaverState state)
 	{
 		// get the step from list
-		var step = steps.FirstOrDefault(s => s.state == state);
-		if (step.IsNull())
+	
+		if (state  == BeaverState.None)
 		{
 			Debug.LogError("Beaver: No step found for state " + state);
 			return;
 		}
 
 		// play the step
+		animator.StopPlayback();
 		animator.SetTrigger(state.ToString());
-		AudioSource.PlayClipAtPoint(step.clip, transform.position);
-		currentState = step.state;
+
+		// play the audio
+		if (state == BeaverState.Introduction)
+		{
+			audioSource.clip = GetAudioForLevel(level);
+			audioSource.Play();
+		}
+
+		currentState = state;
 	}
 
 	private void Update()
 	{
-		//Check the animation progress
-		if (animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f)
+		// check the progress of audio
+		if (audioSource.isPlaying)
 		{
-			animator.StopPlayback();
-			// play the next step
-			 var next = currentState + 1;
-			if (next < (BeaverState)steps.Count)
-			{
-				Debug.Log("Next step is triggered: " + next);
-				PlayStep(next);
-			}
+			wasAudioPlaying = true;
+			return;
 		}
+
+		if (wasAudioPlaying)
+		{
+			float pr = GetAnimeProgress();
+			StopCurrentAndTriggerNext();
+			wasAudioPlaying = false;
+			return;
+		}
+
+		float progress = GetAnimeProgress();
+		//Check the animation progress
+		if (progress >= .99f)
+		{
+			StopCurrentAndTriggerNext();
+		}
+	}
+
+	private float GetAnimeProgress()
+	{
+		var info = animator.GetCurrentAnimatorStateInfo(0);
+		float progress = info.normalizedTime;
+		// If the animation is looping, progress can be greater than 1; use modulo to get the fractional part
+		progress %= 1f;
+		return progress;
+	}
+
+	private void StopCurrentAndTriggerNext()
+	{
+		animator.ResetTrigger(currentState.ToString());
+		animator.StopPlayback();
+		// play the next step
+		var next = currentState + 1;
+		if ((int)next < System.Enum.GetValues(typeof(BeaverState)).Length)
+		{
+			Debug.Log("Next step is triggered: " + next);
+		}
+		else
+		{
+			Debug.Log("All steps are done. Will loop from the beginning");
+			next = BeaverState.Introduction;
+			// increase the level
+			level += 1;
+		}
+
+		PlayStep(next);
 	}
 
 
@@ -89,12 +131,6 @@ public class BeaverController : MonoBehaviour
 		PlayStep(BeaverState.Idle);
 	}
 
-	[Button]
-	public void ToInstruction()
-	{
-		PlayStep(BeaverState.Instruction);
-	}
-	
 
 	[Button]
 	public void ToSuccess()
