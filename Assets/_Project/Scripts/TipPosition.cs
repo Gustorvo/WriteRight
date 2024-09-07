@@ -28,6 +28,11 @@ namespace _Project.Scripts
 
 		private bool startAdding;
 
+		public void InitMeshCollider(MeshCollider collider)
+		{
+			meshCollider = collider;
+		}
+
 
 		private void FixedUpdate()
 		{

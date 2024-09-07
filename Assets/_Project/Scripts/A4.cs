@@ -18,6 +18,11 @@ namespace _Project.Scripts
 			{
 				textureEraser.InitMeshRenderer(this.transform);
 			}
+
+			if (tipPosition != null)
+			{
+				tipPosition.InitMeshCollider(GetComponent<MeshCollider>());
+			}
 			tipPosition.OnTipCollision += OnTipCollision;
 			heightOffset = transform.lossyScale.y * 0.5f;
 		}
@@ -32,13 +37,8 @@ namespace _Project.Scripts
 			// check the Y pos of tip and move our object if necessary
 
 			float deltaY = Mathf.Abs(transform.position.y - obj.y );
-			//var uv = tipPosition.Get();
-			if (deltaY > 0.001f)
-			{
-				transform.position = new Vector3(transform.position.x, obj.y, transform.position.z);
-			}
-
-			//textureEraser.Write(uv);
+			var uv = tipPosition.Get();
+			textureEraser.Write(uv);
 		}
 	}
 }
