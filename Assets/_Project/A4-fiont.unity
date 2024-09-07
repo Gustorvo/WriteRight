@@ -1349,7 +1349,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stylusHandler: {fileID: 729343581}
   tipSize: 8
-  minPixelPerGroup: 100
+  minPixelPerGroup: 200
   saveTextureOnExit: 0
   savePath: Assets/_Project/Paint/SavedTextures/ModifiedTexture.png
   levelTextures:

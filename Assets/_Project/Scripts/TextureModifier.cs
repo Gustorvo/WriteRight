@@ -90,7 +90,7 @@ namespace _Project.Scripts
 		#endregion
 
 
-		public int DivideTextureIntoGroups(int minPixelPerGroup = 100)
+		public int DivideTextureIntoGroups(int minPixelPerGroup = 100, Vector2 threshold = default)
 		{
 			if (!initialized) return -1;
 			int width = texture.width;
@@ -108,7 +108,8 @@ namespace _Project.Scripts
 				pixelArray = pixels,
 				visited = visited,
 				groupResults = groupResults,
-				groupStarts = groupStarts
+				groupStarts = groupStarts,
+				colorThreshold =  threshold
 			};
 
 			JobHandle markJobHandle = markJob.Schedule();
@@ -738,6 +739,7 @@ namespace _Project.Scripts
 		{
 			public int width;
 			public int height;
+			public Vector2 colorThreshold;
 			public NativeArray<Color32> pixelArray;
 			public NativeArray<bool> visited;
 			public NativeParallelMultiHashMap<int, int> groupResults;
@@ -784,17 +786,20 @@ namespace _Project.Scripts
 								if (newX >= 0 && newX < width && newY >= 0 && newY < height)
 								{
 									int neighborIndex = newY * width + newX;
-									if (!visited[neighborIndex] && IsNonTransparent(pixelArray[neighborIndex]))
-									{
-										queue.Enqueue(neighborIndex);
-									}
+									if (colorThreshold != default)
+
+										if (!visited[neighborIndex] && IsNonTransparent(pixelArray[neighborIndex], threshold: colorThreshold))
+										{
+											queue.Enqueue(neighborIndex);
+										}
 								}
 							}
 						}
 
 						if (groupFormed)
 						{
-							groupStarts.Add(groupID); // Only add groupID after confirming that the group has been formed
+							groupStarts.Add(
+								groupID); // Only add groupID after confirming that the group has been formed
 						}
 
 						queue.Dispose();
@@ -802,8 +807,19 @@ namespace _Project.Scripts
 				}
 			}
 
-			private bool IsNonTransparent(Color32 pixelColor) =>
-				pixelColor.a > 0; // Consider non-transparent if alpha is greater than 0
+			private bool IsNonTransparent(Color32 pixelColor, Vector2 threshold = default)
+			{
+				
+				if (threshold != default)
+				{
+					return
+						pixelColor.a > threshold.x && pixelColor.a < threshold.y;
+				}
+				else
+				{
+					return pixelColor.a > 0; // Consider non-transparent if alpha is greater than 0
+				}
+			}
 		}
 
 		[BurstCompile]

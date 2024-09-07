@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using System.Linq;
 using NaughtyAttributes;
 using UnityEngine;
 using Debug = UnityEngine.Debug;
@@ -100,6 +101,13 @@ namespace _Project.Scripts
 			InitModifier(levelTextures[0]);
 		}
 
+		[Button]
+		private void EraseAllGroups()
+		{
+			var ids = modifier.GetAllGroupStartsIds();
+			modifier.SetGroupTransparencyAndRemove(ids.FirstOrDefault());
+		}
+
 		private void InitModifier(Texture2D texture)
 		{
 			if (modifier != null)
@@ -109,7 +117,7 @@ namespace _Project.Scripts
 			}
 
 			modifier = new TextureModifier(texture);
-			groupsTotal = modifier.DivideTextureIntoGroups(minPixelPerGroup);
+			groupsTotal = modifier.DivideTextureIntoGroups(minPixelPerGroup, new Vector2(30f, 70f));
 			if (groupsTotal > 0)
 			{
 				if (checkGroupsCoroutine != null)
