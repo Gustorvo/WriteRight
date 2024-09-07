@@ -16,6 +16,7 @@ namespace _Project.Scripts
         }
         private void OnDestroy()
         {
+            Debug.LogError("Table is destroyed !!!");
             tipPosition.OnTipCollision -= OnTipCollision;
         }
         

@@ -15,6 +15,8 @@ namespace _Project.Scripts
 	/// </summary>
 	public class TextureEraser : MonoBehaviour
 	{
+		//[SerializeField] float successThreshold = 
+		[SerializeField] private Color32 paintColor;
 		[SerializeField] private VrStylusHandler stylusHandler;
 		[SerializeField] int tipSize = 5;
 
@@ -36,6 +38,8 @@ namespace _Project.Scripts
 		private bool initialized;
 		public event Action OnAllGroupsErased;
 
+		private TipPosition tip;
+
 
 		private void Start()
 		{
@@ -44,6 +48,17 @@ namespace _Project.Scripts
 
 		private void Awake()
 		{
+			tip = GetComponent<TipPosition>();
+			tip.OnTipCollisionEnd += OnTipCollisionEnd;
+		}
+
+		private void OnTipCollisionEnd(Vector3 obj)
+		{
+			float transparent = 0;
+			float opaque = 0;
+			
+			modifier.AnalyzeTransparency(out transparent, out opaque);
+			Debug.Log("TraErrornsparent: " + transparent + " Opaque: " + opaque);
 		}
 
 		public void Write(Vector2 uv)
@@ -54,7 +69,7 @@ namespace _Project.Scripts
 				return;
 			}
 
-			modifier.ModifyPixelsAtUVNonAlloc(uv, tipSize, Color.black);
+			modifier.ModifyPixelsAtUVNonAlloc(uv, tipSize, paintColor);
 		}
 
 		public void SetTargetTextureForLevel(int level)
@@ -120,9 +135,6 @@ namespace _Project.Scripts
 			groupsTotal = modifier.DivideTextureIntoGroups(minPixelPerGroup, new Vector2(30f, 70f));
 			if (groupsTotal > 0)
 			{
-				if (checkGroupsCoroutine != null)
-					StopCoroutine(checkGroupsCoroutine);
-				checkGroupsCoroutine = StartCoroutine(CheckGroupsErasedCoroutine());
 				modifier.OnGroupErased += CheckGroupsErased;
 			}
 			else
@@ -134,6 +146,8 @@ namespace _Project.Scripts
 		private void OnDestroy()
 		{
 			modifier.OnGroupErased -= CheckGroupsErased;
+			tip.OnTipCollisionEnd -= OnTipCollisionEnd;
+
 		}
 
 		private IEnumerator CheckGroupsErasedCoroutine()
@@ -141,7 +155,7 @@ namespace _Project.Scripts
 			while (isActiveAndEnabled)
 			{
 				yield return new WaitForSeconds(1);
-				modifier.AnalyzeTransparency();
+				modifier.AnalyzeTransparency(out float _, out float _);
 			}
 		}
 

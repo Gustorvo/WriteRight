@@ -221,6 +221,7 @@ namespace _Project.Scripts
 
 			JobHandle jobHandle = job.Schedule(brushOffsets.Length, 64);
 			jobHandle.Complete();
+			pixels = pixelsNonAllocated;
 			texture.Apply();
 		}
 
@@ -475,8 +476,16 @@ namespace _Project.Scripts
 			groupStarts.RemoveAt(groupIndex);
 		}
 
-		public void AnalyzeTransparency()
+		/// <summary>
+		/// Get the last element's transparency percentage
+		/// </summary>
+		/// <param name="transparencyPercentage"></param>
+		/// <param name="nonOpaquePercentage"></param>
+		public void AnalyzeTransparency(out float transparencyPercentage, out float nonOpaquePercentage)
 		{
+			transparencyPercentage = 0;
+			nonOpaquePercentage = 0;
+			
 			if (!initialized) return;
 			if (groupStarts.Length == 0)
 			{
@@ -504,6 +513,9 @@ namespace _Project.Scripts
 
 			for (int i = 0; i < groupStarts.Length; i++)
 			{
+				transparencyPercentage = transparencyPercentages[i];
+				nonOpaquePercentage = nonOpaquePercentages[i];
+				
 				if (transparencyPercentages[i] > 15 && nonOpaquePercentages[i] > 98)
 				{
 					erazedGroups.Add(groupStarts[i]);

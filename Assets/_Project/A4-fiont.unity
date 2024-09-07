@@ -1347,8 +1347,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5bfbba414ca71c8449e8cdb28ab24608, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  paintColor:
+    serializedVersion: 2
+    rgba: 4293898790
   stylusHandler: {fileID: 729343581}
-  tipSize: 8
+  tipSize: 12
   minPixelPerGroup: 200
   saveTextureOnExit: 0
   savePath: Assets/_Project/Paint/SavedTextures/ModifiedTexture.png
@@ -7207,6 +7210,34 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2539800946652587473, guid: 8e213ee5c91d741429f27740b7b48ff1, type: 3}
+      propertyPath: <SceneLoadedEvent>k__BackingField.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2539800946652587473, guid: 8e213ee5c91d741429f27740b7b48ff1, type: 3}
+      propertyPath: <SceneLoadedEvent>k__BackingField.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2539800946652587473, guid: 8e213ee5c91d741429f27740b7b48ff1, type: 3}
+      propertyPath: <SceneLoadedEvent>k__BackingField.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1549084267}
+    - target: {fileID: 2539800946652587473, guid: 8e213ee5c91d741429f27740b7b48ff1, type: 3}
+      propertyPath: <SceneLoadedEvent>k__BackingField.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2539800946652587473, guid: 8e213ee5c91d741429f27740b7b48ff1, type: 3}
+      propertyPath: <SceneLoadedEvent>k__BackingField.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: CreateMesh
+      objectReference: {fileID: 0}
+    - target: {fileID: 2539800946652587473, guid: 8e213ee5c91d741429f27740b7b48ff1, type: 3}
+      propertyPath: <SceneLoadedEvent>k__BackingField.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Meta.XR.MRUtilityKit.EffectMesh, meta.xr.mrutilitykit
+      objectReference: {fileID: 0}
+    - target: {fileID: 2539800946652587473, guid: 8e213ee5c91d741429f27740b7b48ff1, type: 3}
+      propertyPath: <SceneLoadedEvent>k__BackingField.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 3178690688086138343, guid: 8e213ee5c91d741429f27740b7b48ff1, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.028583996
@@ -7253,7 +7284,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 3178690688086138343, guid: 8e213ee5c91d741429f27740b7b48ff1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1549084268}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e213ee5c91d741429f27740b7b48ff1, type: 3}
 --- !u!1 &1288283856
@@ -8022,7 +8056,7 @@ MonoBehaviour:
   requestBodyTrackingPermissionOnStartup: 0
   requestFaceTrackingPermissionOnStartup: 0
   requestEyeTrackingPermissionOnStartup: 0
-  requestScenePermissionOnStartup: 0
+  requestScenePermissionOnStartup: 1
   requestRecordAudioPermissionOnStartup: 0
   _localDimming: 1
   _trackingOriginType: 1
@@ -8117,6 +8151,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1468418706}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1535279793 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3178690688086138343, guid: 8e213ee5c91d741429f27740b7b48ff1, type: 3}
+  m_PrefabInstance: {fileID: 1276457612}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1541369493
 GameObject:
   m_ObjectHideFlags: 0
@@ -8147,6 +8186,63 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1076641807}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1549084266
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1549084268}
+  - component: {fileID: 1549084267}
+  m_Layer: 0
+  m_Name: Effect Mesh
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &1549084267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1549084266}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e76943ac7e7394f3e969f0c048b26639, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SpawnOnStart: 1
+  MeshMaterial: {fileID: 0}
+  BorderSize: 0
+  Colliders: 0
+  CutHoles: 0
+  castShadows: 1
+  hideMesh: 0
+  Layer: 0
+  textureCoordinateModes:
+  - WallU: 0
+    WallV: 0
+    AnchorUV: 0
+  Labels: 8
+--- !u!4 &1549084268
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1549084266}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.052999415, y: -0.007776916, z: -0.28873676}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1535279793}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1551410341
 GameObject:
