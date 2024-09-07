@@ -1,0 +1,1578 @@
+fileFormatVersion: 2
+guid: 3b83f11fb94c70a4fb1f1b41c147759d
+timeCreated: 1583431900
+licenseType: Store
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Coyote
+    100002: Coyote Head
+    100004: Coyote Jaw
+    100006: Coyote L Calf
+    100008: Coyote L Cheek
+    100010: Coyote L Clavicle
+    100012: Coyote L Ear
+    100014: Coyote L Ear02
+    100016: Coyote L Eye
+    100018: Coyote L Eyebrow
+    100020: Coyote L Finger0
+    100022: Coyote L Finger1
+    100024: Coyote L Finger2
+    100026: Coyote L Finger3
+    100028: Coyote L Foot
+    100030: Coyote L Forearm
+    100032: Coyote L Hand
+    100034: Coyote L Lower Eyelid
+    100036: Coyote L Lower Mouth
+    100038: Coyote L Mouth
+    100040: Coyote L Thigh
+    100042: Coyote L Toe0
+    100044: Coyote L Upper Eyelid
+    100046: Coyote L Upper Mouth
+    100048: Coyote L UpperArm
+    100050: //RootNode
+    100052: Coyote Neck
+    100054: Coyote Nose
+    100056: Coyote Pelvis
+    100058: Coyote R Calf
+    100060: Coyote R Cheek
+    100062: Coyote R Clavicle
+    100064: Coyote R Ear
+    100066: Coyote R Ear02
+    100068: Coyote R Eye
+    100070: Coyote R Eyebrow
+    100072: Coyote R Finger0
+    100074: Coyote R Finger1
+    100076: Coyote R Finger2
+    100078: Coyote R Finger3
+    100080: Coyote R Foot
+    100082: Coyote R Forearm
+    100084: Coyote R Hand
+    100086: Coyote R Lower Eyelid
+    100088: Coyote R Lower Mouth
+    100090: Coyote R Mouth
+    100092: Coyote R Thigh
+    100094: Coyote R Toe0
+    100096: Coyote R Upper Eyelid
+    100098: Coyote R Upper Mouth
+    100100: Coyote R UpperArm
+    100102: Coyote Spine
+    100104: Coyote Spine1
+    100106: Coyote Spine2
+    100108: Coyote Tail
+    100110: Coyote Tail02
+    100112: Coyote Tail03
+    100114: Coyote Tail04
+    100116: Coyote Tongue
+    100118: Coyote Tongue02
+    400000: Coyote
+    400002: Coyote Head
+    400004: Coyote Jaw
+    400006: Coyote L Calf
+    400008: Coyote L Cheek
+    400010: Coyote L Clavicle
+    400012: Coyote L Ear
+    400014: Coyote L Ear02
+    400016: Coyote L Eye
+    400018: Coyote L Eyebrow
+    400020: Coyote L Finger0
+    400022: Coyote L Finger1
+    400024: Coyote L Finger2
+    400026: Coyote L Finger3
+    400028: Coyote L Foot
+    400030: Coyote L Forearm
+    400032: Coyote L Hand
+    400034: Coyote L Lower Eyelid
+    400036: Coyote L Lower Mouth
+    400038: Coyote L Mouth
+    400040: Coyote L Thigh
+    400042: Coyote L Toe0
+    400044: Coyote L Upper Eyelid
+    400046: Coyote L Upper Mouth
+    400048: Coyote L UpperArm
+    400050: //RootNode
+    400052: Coyote Neck
+    400054: Coyote Nose
+    400056: Coyote Pelvis
+    400058: Coyote R Calf
+    400060: Coyote R Cheek
+    400062: Coyote R Clavicle
+    400064: Coyote R Ear
+    400066: Coyote R Ear02
+    400068: Coyote R Eye
+    400070: Coyote R Eyebrow
+    400072: Coyote R Finger0
+    400074: Coyote R Finger1
+    400076: Coyote R Finger2
+    400078: Coyote R Finger3
+    400080: Coyote R Foot
+    400082: Coyote R Forearm
+    400084: Coyote R Hand
+    400086: Coyote R Lower Eyelid
+    400088: Coyote R Lower Mouth
+    400090: Coyote R Mouth
+    400092: Coyote R Thigh
+    400094: Coyote R Toe0
+    400096: Coyote R Upper Eyelid
+    400098: Coyote R Upper Mouth
+    400100: Coyote R UpperArm
+    400102: Coyote Spine
+    400104: Coyote Spine1
+    400106: Coyote Spine2
+    400108: Coyote Tail
+    400110: Coyote Tail02
+    400112: Coyote Tail03
+    400114: Coyote Tail04
+    400116: Coyote Tongue
+    400118: Coyote Tongue02
+    7400000: Coyote Talk
+    7400002: Coyote Success
+    7400004: Coyote Failure
+    7400006: Coyote Sleep
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Coyote Talk
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 100
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Coyote
+        weight: 1
+      - path: Coyote/Coyote Pelvis
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote L Thigh
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote L Thigh/Coyote L Calf
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote L Thigh/Coyote L Calf/Coyote
+          L Foot
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote L Thigh/Coyote L Calf/Coyote
+          L Foot/Coyote L Toe0
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote R Thigh
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote R Thigh/Coyote R Calf
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote R Thigh/Coyote R Calf/Coyote
+          R Foot
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote R Thigh/Coyote R Calf/Coyote
+          R Foot/Coyote R Toe0
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote Head
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote Head/Coyote Jaw
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote Head/Coyote Jaw/Coyote L Lower Mouth
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote Head/Coyote Jaw/Coyote L Mouth
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote Head/Coyote Jaw/Coyote R Lower Mouth
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote Head/Coyote Jaw/Coyote R Mouth
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote Head/Coyote Jaw/Coyote Tongue
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote Head/Coyote Jaw/Coyote Tongue/Coyote Tongue02
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote Head/Coyote L Cheek
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote Head/Coyote L Ear
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote Head/Coyote L Ear/Coyote L Ear02
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote Head/Coyote L Eye
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote Head/Coyote L Eyebrow
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote Head/Coyote L Lower Eyelid
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote Head/Coyote L Upper Eyelid
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote Head/Coyote L Upper Mouth
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote Head/Coyote Nose
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote Head/Coyote R Cheek
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote Head/Coyote R Ear
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote Head/Coyote R Ear/Coyote R Ear02
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote Head/Coyote R Eye
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote Head/Coyote R Eyebrow
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote Head/Coyote R Lower Eyelid
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote Head/Coyote R Upper Eyelid
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote Head/Coyote R Upper Mouth
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote L Clavicle
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote L Clavicle/Coyote L UpperArm
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote L Clavicle/Coyote L UpperArm/Coyote L Forearm
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote L Clavicle/Coyote L UpperArm/Coyote L Forearm/Coyote L Hand
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote L Clavicle/Coyote L UpperArm/Coyote L Forearm/Coyote L Hand/Coyote
+          L Finger0
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote L Clavicle/Coyote L UpperArm/Coyote L Forearm/Coyote L Hand/Coyote
+          L Finger1
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote L Clavicle/Coyote L UpperArm/Coyote L Forearm/Coyote L Hand/Coyote
+          L Finger2
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote L Clavicle/Coyote L UpperArm/Coyote L Forearm/Coyote L Hand/Coyote
+          L Finger3
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote R Clavicle
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote R Clavicle/Coyote R UpperArm
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote R Clavicle/Coyote R UpperArm/Coyote R Forearm
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote R Clavicle/Coyote R UpperArm/Coyote R Forearm/Coyote R Hand
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote R Clavicle/Coyote R UpperArm/Coyote R Forearm/Coyote R Hand/Coyote
+          R Finger0
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote R Clavicle/Coyote R UpperArm/Coyote R Forearm/Coyote R Hand/Coyote
+          R Finger1
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote R Clavicle/Coyote R UpperArm/Coyote R Forearm/Coyote R Hand/Coyote
+          R Finger2
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote R Clavicle/Coyote R UpperArm/Coyote R Forearm/Coyote R Hand/Coyote
+          R Finger3
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Tail
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Tail/Coyote Tail02
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Tail/Coyote Tail02/Coyote Tail03
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Tail/Coyote Tail02/Coyote Tail03/Coyote
+          Tail04
+        weight: 1
+      - path: Coyote Mesh
+        weight: 1
+      maskType: 1
+      maskSource: {fileID: 31900000, guid: f8c7629b5ad6d6048949afe399adb5f6, type: 2}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Coyote Success
+      takeName: Take 001
+      firstFrame: 110
+      lastFrame: 210
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Coyote
+        weight: 1
+      - path: Coyote/Coyote Pelvis
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote L Thigh
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote L Thigh/Coyote L Calf
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote L Thigh/Coyote L Calf/Coyote
+          L Foot
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote L Thigh/Coyote L Calf/Coyote
+          L Foot/Coyote L Toe0
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote R Thigh
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote R Thigh/Coyote R Calf
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote R Thigh/Coyote R Calf/Coyote
+          R Foot
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote R Thigh/Coyote R Calf/Coyote
+          R Foot/Coyote R Toe0
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote Head
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote Head/Coyote Jaw
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote Head/Coyote Jaw/Coyote L Lower Mouth
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote Head/Coyote Jaw/Coyote L Mouth
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote Head/Coyote Jaw/Coyote R Lower Mouth
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote Head/Coyote Jaw/Coyote R Mouth
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote Head/Coyote Jaw/Coyote Tongue
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote Head/Coyote Jaw/Coyote Tongue/Coyote Tongue02
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote Head/Coyote L Cheek
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote Head/Coyote L Ear
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote Head/Coyote L Ear/Coyote L Ear02
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote Head/Coyote L Eye
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote Head/Coyote L Eyebrow
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote Head/Coyote L Lower Eyelid
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote Head/Coyote L Upper Eyelid
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote Head/Coyote L Upper Mouth
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote Head/Coyote Nose
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote Head/Coyote R Cheek
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote Head/Coyote R Ear
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote Head/Coyote R Ear/Coyote R Ear02
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote Head/Coyote R Eye
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote Head/Coyote R Eyebrow
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote Head/Coyote R Lower Eyelid
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote Head/Coyote R Upper Eyelid
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote Head/Coyote R Upper Mouth
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote L Clavicle
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote L Clavicle/Coyote L UpperArm
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote L Clavicle/Coyote L UpperArm/Coyote L Forearm
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote L Clavicle/Coyote L UpperArm/Coyote L Forearm/Coyote L Hand
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote L Clavicle/Coyote L UpperArm/Coyote L Forearm/Coyote L Hand/Coyote
+          L Finger0
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote L Clavicle/Coyote L UpperArm/Coyote L Forearm/Coyote L Hand/Coyote
+          L Finger1
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote L Clavicle/Coyote L UpperArm/Coyote L Forearm/Coyote L Hand/Coyote
+          L Finger2
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote L Clavicle/Coyote L UpperArm/Coyote L Forearm/Coyote L Hand/Coyote
+          L Finger3
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote R Clavicle
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote R Clavicle/Coyote R UpperArm
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote R Clavicle/Coyote R UpperArm/Coyote R Forearm
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote R Clavicle/Coyote R UpperArm/Coyote R Forearm/Coyote R Hand
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote R Clavicle/Coyote R UpperArm/Coyote R Forearm/Coyote R Hand/Coyote
+          R Finger0
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote R Clavicle/Coyote R UpperArm/Coyote R Forearm/Coyote R Hand/Coyote
+          R Finger1
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote R Clavicle/Coyote R UpperArm/Coyote R Forearm/Coyote R Hand/Coyote
+          R Finger2
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote R Clavicle/Coyote R UpperArm/Coyote R Forearm/Coyote R Hand/Coyote
+          R Finger3
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Tail
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Tail/Coyote Tail02
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Tail/Coyote Tail02/Coyote Tail03
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Tail/Coyote Tail02/Coyote Tail03/Coyote
+          Tail04
+        weight: 1
+      - path: Coyote Mesh
+        weight: 1
+      maskType: 1
+      maskSource: {fileID: 31900000, guid: f8c7629b5ad6d6048949afe399adb5f6, type: 2}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Coyote Failure
+      takeName: Take 001
+      firstFrame: 220
+      lastFrame: 320
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Coyote
+        weight: 1
+      - path: Coyote/Coyote Pelvis
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote L Thigh
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote L Thigh/Coyote L Calf
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote L Thigh/Coyote L Calf/Coyote
+          L Foot
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote L Thigh/Coyote L Calf/Coyote
+          L Foot/Coyote L Toe0
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote R Thigh
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote R Thigh/Coyote R Calf
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote R Thigh/Coyote R Calf/Coyote
+          R Foot
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote R Thigh/Coyote R Calf/Coyote
+          R Foot/Coyote R Toe0
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote Head
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote Head/Coyote Jaw
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote Head/Coyote Jaw/Coyote L Lower Mouth
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote Head/Coyote Jaw/Coyote L Mouth
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote Head/Coyote Jaw/Coyote R Lower Mouth
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote Head/Coyote Jaw/Coyote R Mouth
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote Head/Coyote Jaw/Coyote Tongue
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote Head/Coyote Jaw/Coyote Tongue/Coyote Tongue02
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote Head/Coyote L Cheek
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote Head/Coyote L Ear
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote Head/Coyote L Ear/Coyote L Ear02
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote Head/Coyote L Eye
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote Head/Coyote L Eyebrow
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote Head/Coyote L Lower Eyelid
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote Head/Coyote L Upper Eyelid
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote Head/Coyote L Upper Mouth
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote Head/Coyote Nose
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote Head/Coyote R Cheek
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote Head/Coyote R Ear
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote Head/Coyote R Ear/Coyote R Ear02
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote Head/Coyote R Eye
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote Head/Coyote R Eyebrow
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote Head/Coyote R Lower Eyelid
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote Head/Coyote R Upper Eyelid
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote Head/Coyote R Upper Mouth
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote L Clavicle
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote L Clavicle/Coyote L UpperArm
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote L Clavicle/Coyote L UpperArm/Coyote L Forearm
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote L Clavicle/Coyote L UpperArm/Coyote L Forearm/Coyote L Hand
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote L Clavicle/Coyote L UpperArm/Coyote L Forearm/Coyote L Hand/Coyote
+          L Finger0
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote L Clavicle/Coyote L UpperArm/Coyote L Forearm/Coyote L Hand/Coyote
+          L Finger1
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote L Clavicle/Coyote L UpperArm/Coyote L Forearm/Coyote L Hand/Coyote
+          L Finger2
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote L Clavicle/Coyote L UpperArm/Coyote L Forearm/Coyote L Hand/Coyote
+          L Finger3
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote R Clavicle
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote R Clavicle/Coyote R UpperArm
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote R Clavicle/Coyote R UpperArm/Coyote R Forearm
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote R Clavicle/Coyote R UpperArm/Coyote R Forearm/Coyote R Hand
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote R Clavicle/Coyote R UpperArm/Coyote R Forearm/Coyote R Hand/Coyote
+          R Finger0
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote R Clavicle/Coyote R UpperArm/Coyote R Forearm/Coyote R Hand/Coyote
+          R Finger1
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote R Clavicle/Coyote R UpperArm/Coyote R Forearm/Coyote R Hand/Coyote
+          R Finger2
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote R Clavicle/Coyote R UpperArm/Coyote R Forearm/Coyote R Hand/Coyote
+          R Finger3
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Tail
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Tail/Coyote Tail02
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Tail/Coyote Tail02/Coyote Tail03
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Tail/Coyote Tail02/Coyote Tail03/Coyote
+          Tail04
+        weight: 1
+      - path: Coyote Mesh
+        weight: 1
+      maskType: 1
+      maskSource: {fileID: 31900000, guid: f8c7629b5ad6d6048949afe399adb5f6, type: 2}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Coyote Sleep
+      takeName: Take 001
+      firstFrame: 330
+      lastFrame: 390
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Coyote
+        weight: 1
+      - path: Coyote/Coyote Pelvis
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote L Thigh
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote L Thigh/Coyote L Calf
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote L Thigh/Coyote L Calf/Coyote
+          L Foot
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote L Thigh/Coyote L Calf/Coyote
+          L Foot/Coyote L Toe0
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote R Thigh
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote R Thigh/Coyote R Calf
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote R Thigh/Coyote R Calf/Coyote
+          R Foot
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote R Thigh/Coyote R Calf/Coyote
+          R Foot/Coyote R Toe0
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote Head
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote Head/Coyote Jaw
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote Head/Coyote Jaw/Coyote L Lower Mouth
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote Head/Coyote Jaw/Coyote L Mouth
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote Head/Coyote Jaw/Coyote R Lower Mouth
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote Head/Coyote Jaw/Coyote R Mouth
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote Head/Coyote Jaw/Coyote Tongue
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote Head/Coyote Jaw/Coyote Tongue/Coyote Tongue02
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote Head/Coyote L Cheek
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote Head/Coyote L Ear
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote Head/Coyote L Ear/Coyote L Ear02
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote Head/Coyote L Eye
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote Head/Coyote L Eyebrow
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote Head/Coyote L Lower Eyelid
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote Head/Coyote L Upper Eyelid
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote Head/Coyote L Upper Mouth
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote Head/Coyote Nose
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote Head/Coyote R Cheek
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote Head/Coyote R Ear
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote Head/Coyote R Ear/Coyote R Ear02
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote Head/Coyote R Eye
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote Head/Coyote R Eyebrow
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote Head/Coyote R Lower Eyelid
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote Head/Coyote R Upper Eyelid
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote Head/Coyote R Upper Mouth
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote L Clavicle
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote L Clavicle/Coyote L UpperArm
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote L Clavicle/Coyote L UpperArm/Coyote L Forearm
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote L Clavicle/Coyote L UpperArm/Coyote L Forearm/Coyote L Hand
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote L Clavicle/Coyote L UpperArm/Coyote L Forearm/Coyote L Hand/Coyote
+          L Finger0
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote L Clavicle/Coyote L UpperArm/Coyote L Forearm/Coyote L Hand/Coyote
+          L Finger1
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote L Clavicle/Coyote L UpperArm/Coyote L Forearm/Coyote L Hand/Coyote
+          L Finger2
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote L Clavicle/Coyote L UpperArm/Coyote L Forearm/Coyote L Hand/Coyote
+          L Finger3
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote R Clavicle
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote R Clavicle/Coyote R UpperArm
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote R Clavicle/Coyote R UpperArm/Coyote R Forearm
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote R Clavicle/Coyote R UpperArm/Coyote R Forearm/Coyote R Hand
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote R Clavicle/Coyote R UpperArm/Coyote R Forearm/Coyote R Hand/Coyote
+          R Finger0
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote R Clavicle/Coyote R UpperArm/Coyote R Forearm/Coyote R Hand/Coyote
+          R Finger1
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote R Clavicle/Coyote R UpperArm/Coyote R Forearm/Coyote R Hand/Coyote
+          R Finger2
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Spine/Coyote Spine1/Coyote Spine2/Coyote
+          Neck/Coyote R Clavicle/Coyote R UpperArm/Coyote R Forearm/Coyote R Hand/Coyote
+          R Finger3
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Tail
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Tail/Coyote Tail02
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Tail/Coyote Tail02/Coyote Tail03
+        weight: 1
+      - path: Coyote/Coyote Pelvis/Coyote Tail/Coyote Tail02/Coyote Tail03/Coyote
+          Tail04
+        weight: 1
+      - path: Coyote Mesh
+        weight: 1
+      maskType: 1
+      maskSource: {fileID: 31900000, guid: f8c7629b5ad6d6048949afe399adb5f6, type: 2}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 1
+  humanDescription:
+    serializedVersion: 2
+    human:
+    - boneName: Coyote Pelvis
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Coyote L Thigh
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Coyote R Thigh
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Coyote L Calf
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Coyote R Calf
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Coyote L Foot
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Coyote R Foot
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Coyote Spine
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Coyote Spine1
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Coyote Neck
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Coyote Head
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Coyote L Clavicle
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Coyote R Clavicle
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Coyote L UpperArm
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Coyote R UpperArm
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Coyote L Forearm
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Coyote R Forearm
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Coyote L Hand
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Coyote R Hand
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Coyote L Toe0
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Coyote R Toe0
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Coyote L Finger0
+      humanName: Left Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Coyote L Finger1
+      humanName: Left Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Coyote L Finger2
+      humanName: Left Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Coyote L Finger3
+      humanName: Left Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Coyote R Finger0
+      humanName: Right Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Coyote R Finger1
+      humanName: Right Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Coyote R Finger2
+      humanName: Right Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Coyote R Finger3
+      humanName: Right Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Coyote Spine2
+      humanName: UpperChest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: Coyote(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0.00000047595714, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Coyote
+      parentName: Coyote(Clone)
+      position: {x: -0, y: 0.5196555, z: -9.655587e-10}
+      rotation: {x: -0.50000036, y: 0.49999964, z: 0.49999964, w: 0.50000036}
+      scale: {x: 0.99999994, y: 0.99999994, z: 1}
+    - name: Coyote Pelvis
+      parentName: Coyote
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0.5, y: -0.5, z: -0.5, w: -0.5}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Coyote Spine
+      parentName: Coyote Pelvis
+      position: {x: -0.056130446, y: -0.00007113972, z: 0.00000007794056}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000002, y: 1.0000004, z: 1.0000002}
+    - name: Coyote Spine1
+      parentName: Coyote Spine
+      position: {x: -0.08950191, y: -0.000071060655, z: -1.9596882e-10}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1.0000002, z: 1.0000001}
+    - name: Coyote Spine2
+      parentName: Coyote Spine1
+      position: {x: -0.08949462, y: -0.00007013082, z: -1.9478648e-10}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000001, y: 0.9999999, z: 1}
+    - name: Coyote Neck
+      parentName: Coyote Spine2
+      position: {x: -0.08950737, y: -0.00010838508, z: -3.0064257e-10}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000002, y: 0.99999994, z: 1}
+    - name: Coyote Head
+      parentName: Coyote Neck
+      position: {x: -0.13611938, y: -0.000000019073486, z: 7.2759575e-14}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000004, y: 1.0000004, z: 1}
+    - name: Coyote L Lower Eyelid
+      parentName: Coyote Head
+      position: {x: -0.23050025, y: 0.11885367, z: 0.080469415}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000001, y: 1.0000002, z: 0.9999998}
+    - name: Coyote L Upper Eyelid
+      parentName: Coyote Head
+      position: {x: -0.2305004, y: 0.11880783, z: 0.08042436}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000002, y: 1.0000012, z: 1.000001}
+    - name: Coyote L Eyebrow
+      parentName: Coyote Head
+      position: {x: -0.26574364, y: 0.122267604, z: 0.061837606}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.9999999, y: 1.0000004, z: 1.0000005}
+    - name: Coyote L Cheek
+      parentName: Coyote Head
+      position: {x: -0.13953964, y: -0.00013258457, z: 0.16246381}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000002, y: 1.0000004, z: 1.0000005}
+    - name: Coyote Nose
+      parentName: Coyote Head
+      position: {x: -0.14567275, y: 0.4387044, z: 0.00000061534837}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000006, y: 1.0000011, z: 1.0000002}
+    - name: Coyote L Upper Mouth
+      parentName: Coyote Head
+      position: {x: -0.12769577, y: 0.34035662, z: 0.10600291}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000005, y: 1.0000008, z: 1.0000011}
+    - name: Coyote Jaw
+      parentName: Coyote Head
+      position: {x: -0.16388541, y: 0.01408713, z: 0.00000001932929}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000006, y: 1.0000011, z: 1.0000004}
+    - name: Coyote L Mouth
+      parentName: Coyote Jaw
+      position: {x: -0.13661967, y: -0.023706207, z: 0.10328727}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.99999976, y: 1.0000007, z: 1.000001}
+    - name: Coyote L Lower Mouth
+      parentName: Coyote Jaw
+      position: {x: -0.25502387, y: -0.0008260345, z: 0.071786836}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.000001, y: 1.000001, z: 1.0000006}
+    - name: Coyote R Lower Mouth
+      parentName: Coyote Jaw
+      position: {x: -0.25502455, y: -0.0008189392, z: -0.07178683}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.9999998, y: 1.0000004, z: 1.0000006}
+    - name: Coyote R Mouth
+      parentName: Coyote Jaw
+      position: {x: -0.13661967, y: -0.02370552, z: -0.10328737}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000007, y: 1.0000008, z: 1.0000007}
+    - name: Coyote Tongue
+      parentName: Coyote Jaw
+      position: {x: -0.13350467, y: 0.003452606, z: -0.00000013739394}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.000001, y: 1.0000011, z: 0.99999964}
+    - name: Coyote Tongue02
+      parentName: Coyote Tongue
+      position: {x: -0.08206869, y: -0.00006530761, z: -1.8131686e-10}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000005, y: 1.0000008, z: 1.0000005}
+    - name: Coyote L Eye
+      parentName: Coyote Head
+      position: {x: -0.23051108, y: 0.11882936, z: 0.080447234}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000006, y: 1.0000008, z: 1.0000005}
+    - name: Coyote L Ear
+      parentName: Coyote Head
+      position: {x: -0.30332237, y: -0.06210511, z: 0.13712075}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000006, y: 1.0000007, z: 1.0000006}
+    - name: Coyote L Ear02
+      parentName: Coyote L Ear
+      position: {x: -0.160643, y: -0.00012720107, z: -0.000002450943}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Coyote R Lower Eyelid
+      parentName: Coyote Head
+      position: {x: -0.23050025, y: 0.118854135, z: -0.08046875}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000014, y: 1.0000012, z: 1.0000004}
+    - name: Coyote R Upper Eyelid
+      parentName: Coyote Head
+      position: {x: -0.2305004, y: 0.11880828, z: -0.0804237}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000002, y: 1.0000002, z: 0.99999994}
+    - name: Coyote R Eyebrow
+      parentName: Coyote Head
+      position: {x: -0.26574364, y: 0.12226793, z: -0.061836928}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000011, y: 1.0000011, z: 0.99999994}
+    - name: Coyote R Cheek
+      parentName: Coyote Head
+      position: {x: -0.13953964, y: -0.00013168335, z: -0.16246386}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000013, y: 1.0000007, z: 1.0000008}
+    - name: Coyote R Upper Mouth
+      parentName: Coyote Head
+      position: {x: -0.12769577, y: 0.34035724, z: -0.106001005}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000005, y: 1.0000002, z: 1.0000002}
+    - name: Coyote R Eye
+      parentName: Coyote Head
+      position: {x: -0.23051108, y: 0.11882982, z: -0.080446556}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000001, y: 1.0000004, z: 0.99999994}
+    - name: Coyote R Ear
+      parentName: Coyote Head
+      position: {x: -0.30332237, y: -0.062104337, z: -0.13712107}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000007, y: 1.0000002, z: 1.0000005}
+    - name: Coyote R Ear02
+      parentName: Coyote R Ear
+      position: {x: -0.160643, y: -0.00012720107, z: 0.0000024414062}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.000001, y: 1.000001, z: 1.0000007}
+    - name: Coyote L Clavicle
+      parentName: Coyote Spine2
+      position: {x: -0.07347267, y: -0.0032637785, z: 0.018073583}
+      rotation: {x: 0.7071068, y: -0.000000030908623, z: -0.7071068, w: 0.000000030908623}
+      scale: {x: 0.9999999, y: 1.0000002, z: 1.0000002}
+    - name: Coyote L UpperArm
+      parentName: Coyote L Clavicle
+      position: {x: -0.110100284, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.99999994, y: 1.0000006, z: 1.0000006}
+    - name: Coyote L Forearm
+      parentName: Coyote L UpperArm
+      position: {x: -0.22007944, y: 0.0000000023841857, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.9999999, y: 1.0000007, z: 1.0000008}
+    - name: Coyote L Hand
+      parentName: Coyote L Forearm
+      position: {x: -0.15603814, y: 0, z: 0.000000076293944}
+      rotation: {x: 0.7071068, y: 0, z: 0, w: -0.7071068}
+      scale: {x: 1.0000002, y: 1.0000011, z: 1.0000006}
+    - name: Coyote L Finger3
+      parentName: Coyote L Hand
+      position: {x: -0.11334892, y: 0.007958831, z: 0.039536305}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000001, y: 1.0000002, z: 1.0000001}
+    - name: Coyote L Finger0
+      parentName: Coyote L Hand
+      position: {x: -0.07000866, y: 0.018625641, z: -0.062981434}
+      rotation: {x: 0, y: 0.3826835, z: 0, w: -0.9238795}
+      scale: {x: 0.99999994, y: 1.0000001, z: 1.0000011}
+    - name: Coyote L Finger1
+      parentName: Coyote L Hand
+      position: {x: -0.11907722, y: -0.00018684387, z: -0.031147346}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1.0000012, z: 1.0000006}
+    - name: Coyote L Finger2
+      parentName: Coyote L Hand
+      position: {x: -0.12282039, y: 0.00021980285, z: 0.0054622027}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000001, y: 1.000001, z: 1.0000004}
+    - name: Coyote R Clavicle
+      parentName: Coyote Spine2
+      position: {x: -0.07347267, y: -0.0032636833, z: -0.0180736}
+      rotation: {x: 0.7071068, y: -0.000000030908623, z: 0.7071068, w: -0.000000030908623}
+      scale: {x: 1.0000005, y: 1.0000007, z: 1.0000005}
+    - name: Coyote R UpperArm
+      parentName: Coyote R Clavicle
+      position: {x: -0.11010028, y: 0, z: 0.000000076293944}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000006, y: 1.0000002, z: 1.0000006}
+    - name: Coyote R Forearm
+      parentName: Coyote R UpperArm
+      position: {x: -0.22007945, y: 0.0000000023841857, z: 0.000000076293944}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000006, y: 1.0000002, z: 1.0000002}
+    - name: Coyote R Hand
+      parentName: Coyote R Forearm
+      position: {x: -0.15603821, y: 0, z: -0.000000076293944}
+      rotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+      scale: {x: 1.0000008, y: 1.0000007, z: 1.0000002}
+    - name: Coyote R Finger3
+      parentName: Coyote R Hand
+      position: {x: -0.113348804, y: 0.007958908, z: -0.039536305}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.99999976, y: 0.99999964, z: 0.99999976}
+    - name: Coyote R Finger0
+      parentName: Coyote R Hand
+      position: {x: -0.07000866, y: 0.018625565, z: 0.062981434}
+      rotation: {x: 0, y: 0.38268346, z: 0, w: 0.9238795}
+      scale: {x: 0.9999998, y: 0.9999998, z: 0.99999976}
+    - name: Coyote R Finger1
+      parentName: Coyote R Hand
+      position: {x: -0.11907726, y: -0.00018684387, z: 0.031147348}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000002, y: 1.0000002, z: 1.0000004}
+    - name: Coyote R Finger2
+      parentName: Coyote R Hand
+      position: {x: -0.122820355, y: 0.00021972656, z: -0.0054622027}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 0.99999994, z: 1.0000002}
+    - name: Coyote L Thigh
+      parentName: Coyote Pelvis
+      position: {x: 0.000000114440915, y: 0.00000012717376, z: 0.07532368}
+      rotation: {x: 0, y: 1, z: 0, w: -0.00000004371139}
+      scale: {x: 1.0000012, y: 1.0000011, z: 1.0000007}
+    - name: Coyote L Calf
+      parentName: Coyote L Thigh
+      position: {x: -0.2629163, y: -0.000000009536743, z: -0.0000000047683715}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.9999998, y: 0.9999997, z: 1.0000001}
+    - name: Coyote L Foot
+      parentName: Coyote L Calf
+      position: {x: -0.1905616, y: 0.000000009536743, z: 0.0000000047683715}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000004, y: 1.0000007, z: 1.0000005}
+    - name: Coyote L Toe0
+      parentName: Coyote L Foot
+      position: {x: -0.056126542, y: 0.16456303, z: -0.000000009536743}
+      rotation: {x: 0, y: 0, z: 0.7071068, w: -0.7071068}
+      scale: {x: 1.0000008, y: 1.0000001, z: 1.0000006}
+    - name: Coyote R Thigh
+      parentName: Coyote Pelvis
+      position: {x: -0.000000114440915, y: -0.00000008174403, z: -0.07532368}
+      rotation: {x: 0, y: 1, z: 0, w: -0.00000004371139}
+      scale: {x: 1.0000007, y: 1.0000001, z: 1.0000002}
+    - name: Coyote R Calf
+      parentName: Coyote R Thigh
+      position: {x: -0.26291627, y: -0.000000019073486, z: 0.0000000047683715}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000005, y: 1.0000007, z: 1.0000007}
+    - name: Coyote R Foot
+      parentName: Coyote R Calf
+      position: {x: -0.1905616, y: 0.000000009536743, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.9999999, y: 1, z: 1}
+    - name: Coyote R Toe0
+      parentName: Coyote R Foot
+      position: {x: -0.056126542, y: 0.16456304, z: 0}
+      rotation: {x: 0, y: 0, z: 0.7071068, w: -0.7071068}
+      scale: {x: 1.0000007, y: 0.9999999, z: 1.0000008}
+    - name: Coyote Tail
+      parentName: Coyote Pelvis
+      position: {x: 0.0002646637, y: -0.074697085, z: 0.00000012199045}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.99999994, y: 1.0000001, z: 0.9999998}
+    - name: Coyote Tail02
+      parentName: Coyote Tail
+      position: {x: -0.33238822, y: -0.00022399901, z: -6.213668e-10}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000001, y: 0.9999999, z: 1.0000002}
+    - name: Coyote Tail03
+      parentName: Coyote Tail02
+      position: {x: -0.28311023, y: -0.0002253723, z: -6.2515026e-10}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000001, y: 0.99999994, z: 1}
+    - name: Coyote Tail04
+      parentName: Coyote Tail03
+      position: {x: -0.28319052, y: -0.00013019562, z: -3.6117853e-10}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000008, y: 1.0000002, z: 1.0000005}
+    - name: Coyote Mesh
+      parentName: Coyote(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 1
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: e60e4a3b60c730e4a9f21fc55c10bdff,
+    type: 3}
+  animationType: 3
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
