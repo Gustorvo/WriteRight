@@ -17,7 +17,6 @@ namespace _Project.Scripts
 		[SerializeField] private VrStylusHandler stylusHandler;
 		[SerializeField] int tipSize = 5;
 
-		[SerializeField] private Transform meshTransform;
 
 		[SerializeField] private int minPixelPerGroup = 100;
 		[SerializeField] private bool saveTextureOnExit;
@@ -39,13 +38,13 @@ namespace _Project.Scripts
 
 		private void Start()
 		{
-			InitMeshRenderer(meshTransform);
 			InitWithDefaultTexture();
 		}
 
 		private void Awake()
 		{
 		}
+
 		public void Write(Vector2 uv)
 		{
 			if (!initialized)
@@ -53,6 +52,7 @@ namespace _Project.Scripts
 				Debug.LogError("Texture erazer not initialized");
 				return;
 			}
+
 			modifier.ModifyPixelsAtUVNonAlloc(uv, tipSize, Color.black);
 		}
 
@@ -68,7 +68,7 @@ namespace _Project.Scripts
 			InitModifier(texture2D);
 		}
 
-		private void InitMeshRenderer(Transform meshTransform)
+		public void InitMeshRenderer(Transform meshTransform)
 		{
 			if (!meshTransform.TryGetComponent(out MeshRenderer mr))
 			{
@@ -80,7 +80,14 @@ namespace _Project.Scripts
 			if (modifier != null && modifier.texture != null)
 			{
 				// mesh texture has changed, we need to re-initialized the modifier
-				initialized = false;
+				// reassign mesh renderer's texture
+				meshRenderer.material.mainTexture = modifier.texture;
+				initialized = true;
+			}
+			else
+			{
+				Debug.LogError("modifier should not be null");
+				InitWithDefaultTexture();
 			}
 
 			//collision.SetCollider(meshTransform);
@@ -114,12 +121,6 @@ namespace _Project.Scripts
 			{
 				Debug.LogError("Texture is possibly empty or is a solid color");
 			}
-
-			// reassign mesh renderer's texture
-			meshRenderer.material.mainTexture = modifier.texture;
-
-			Debug.Log("Texture erazer: modifier initialized");
-			initialized = true;
 		}
 
 		private void OnDestroy()

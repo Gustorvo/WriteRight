@@ -5,13 +5,19 @@ namespace _Project.Scripts
 {
 	public class A4 : MonoBehaviour
 	{
-		[SerializeField] TextureEraser textureEraser;
-		[SerializeField] TipPosition tipPosition;
+		private TextureEraser textureEraser;
+		private TipPosition tipPosition;
 
 		private float heightOffset;
 
 		private void Awake()
 		{
+			textureEraser = FindObjectOfType<TextureEraser>();
+			tipPosition = FindObjectOfType<TipPosition>();
+			if (textureEraser != null)
+			{
+				textureEraser.InitMeshRenderer(this.transform);
+			}
 			tipPosition.OnTipCollision += OnTipCollision;
 			heightOffset = transform.lossyScale.y * 0.5f;
 		}
