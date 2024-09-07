@@ -16,6 +16,7 @@ namespace _Project.Scripts
 		private NativeArray<Vector2Int> brushOffsets;
 		private int textureWidth, textureHeight;
 		public Texture2D texture;
+		public Texture2D originalTexture; // save a copy of the original texture in case we want to revert
 		private NativeArray<Color32> pixels;
 		private NativeArray<Color32> pixelsNonAllocated;
 		private NativeList<int> groupStarts;
@@ -32,8 +33,11 @@ namespace _Project.Scripts
 			textureWidth = inputTexture.width;
 			textureHeight = inputTexture.height;
 			texture = new Texture2D(textureWidth, textureHeight, TextureFormat.RGBA32, false);
+			originalTexture = new Texture2D(textureWidth, textureHeight, TextureFormat.RGBA32, false);
 			texture.LoadRawTextureData(inputTexture.GetRawTextureData());
+			originalTexture.LoadRawTextureData(inputTexture.GetRawTextureData());
 			texture.Apply();
+			originalTexture.Apply();
 			if (pixels.IsCreated) pixels.Dispose();
 			pixels = new NativeArray<Color32>(texture.GetPixels32(), Allocator.Persistent);
 			pixelsNonAllocated = new NativeArray<Color32>(textureWidth * textureHeight, Allocator.Persistent);
@@ -48,8 +52,16 @@ namespace _Project.Scripts
 			if (groupStarts.IsCreated) groupStarts.Dispose();
 			if (groupResults.IsCreated) groupResults.Dispose();
 			texture = null;
+			originalTexture = null;
 			OnGroupErased = null;
 			initialized = false;
+		}
+
+		public void ResetTexture()
+		{
+			//copy the original texture to the texture
+			texture.LoadRawTextureData(originalTexture.GetRawTextureData());
+			texture.Apply();
 		}
 
 		#endregion

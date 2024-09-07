@@ -117,6 +117,9 @@ namespace _Project.Scripts
 		}
 
 		[Button]
+		void ResetTexture() => modifier.ResetTexture();
+
+		[Button]
 		private void EraseAllGroups()
 		{
 			var ids = modifier.GetAllGroupStartsIds();
