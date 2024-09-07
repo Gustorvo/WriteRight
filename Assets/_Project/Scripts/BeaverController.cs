@@ -23,7 +23,7 @@ public struct BeaverStep
 
 	public bool IsNull()
 	{
-		return clip == null && state.Equals(default(BeaverState));
+		return state.Equals(default(BeaverState));
 	}
 }
 
@@ -32,9 +32,16 @@ public class BeaverController : MonoBehaviour
 	[SerializeField] private List<BeaverStep> steps = new List<BeaverStep>();
 	[SerializeField] Animator animator;
 
+	private BeaverState currentState = BeaverState.None;
+
 	private void Awake()
 	{
 		Assert.IsNotNull(animator);
+	}
+
+	private void Start()
+	{
+		PlayStep(BeaverState.Introduction);
 	}
 
 	public void PlayStep(BeaverState state)
@@ -50,6 +57,23 @@ public class BeaverController : MonoBehaviour
 		// play the step
 		animator.SetTrigger(state.ToString());
 		AudioSource.PlayClipAtPoint(step.clip, transform.position);
+		currentState = step.state;
+	}
+
+	private void Update()
+	{
+		//Check the animation progress
+		if (animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f)
+		{
+			animator.StopPlayback();
+			// play the next step
+			 var next = currentState + 1;
+			if (next < (BeaverState)steps.Count)
+			{
+				Debug.Log("Next step is triggered: " + next);
+				PlayStep(next);
+			}
+		}
 	}
 
 
