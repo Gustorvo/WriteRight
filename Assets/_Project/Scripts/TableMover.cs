@@ -10,6 +10,7 @@ namespace _Project.Scripts
 
         private void Awake()
         {
+            Debug.LogError("Table is instantiated !!!");
             tipPosition = FindObjectOfType<TipPosition>();
             tipPosition.OnTipCollision += OnTipCollision;
         }
