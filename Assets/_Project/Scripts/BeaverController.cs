@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using _Project.Scripts;
@@ -22,11 +23,14 @@ public class BeaverController : MonoBehaviour
 	[SerializeField] Animator animator;
 
 	[SerializeField] List<AudioClip> instrucionClips;
+	[SerializeField] private AudioClip yahoo;
+	[SerializeField] private AudioClip success;
 
 	public static event Action<BeaverState> OnBeaverStateChange;
 	public BeaverState currentState = BeaverState.None;
 	private bool wasAudioPlaying = false;
 	private int level = 0;
+	private Coroutine transitioning;
 
 	private void Awake()
 	{
@@ -62,9 +66,6 @@ public class BeaverController : MonoBehaviour
 			return;
 		}
 
-		// play the step
-		animator.StopPlayback();
-		animator.SetTrigger(state.ToString());
 
 		// play the audio
 		if (state == BeaverState.Introduction)
@@ -73,15 +74,45 @@ public class BeaverController : MonoBehaviour
 			audioSource.Play();
 		}
 
+		if (state == BeaverState.Success)
+		{
+			audioSource.PlayOneShot(success);
+			audioSource.clip = yahoo;
+			audioSource.PlayDelayed(1f);
+			transitioning = StartCoroutine(DelayCoroutine(1f, () => PlayAnimation(state)));
+			//audioSource.
+		}
+		else
+		{
+			PlayAnimation(state);
+		}
+
+
 		currentState = state;
 		OnBeaverStateChange?.Invoke(state);
 	}
 
+	IEnumerator DelayCoroutine(float time, Action callback)
+	{
+		yield return new WaitForSeconds(time);
+		callback?.Invoke();
+		transitioning = null;
+	}
+
+	private void PlayAnimation(BeaverState state, float delay = 0)
+	{
+		// play the step
+		animator.StopPlayback();
+		animator.SetTrigger(state.ToString());
+	}
+
 	private void Update()
 	{
+		if (transitioning != null) return;
 		// check the progress of audio
 		if (audioSource.isPlaying)
 		{
+			if (currentState == BeaverState.Success) return;
 			wasAudioPlaying = true;
 			return;
 		}
@@ -117,7 +148,7 @@ public class BeaverController : MonoBehaviour
 
 		//return and wait for the letter to be written
 		if (next == BeaverState.Success) return;
-		
+
 		animator.ResetTrigger(currentState.ToString());
 		animator.StopPlayback();
 		// play the next step
