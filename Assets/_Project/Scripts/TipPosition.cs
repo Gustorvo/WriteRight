@@ -6,7 +6,6 @@ namespace _Project.Scripts
 {
 	public class TipPosition : MonoBehaviour
 	{
-		[SerializeField] private float tipOffset = 0.00f;
 		[SerializeField] Transform tipTransform;
 		[SerializeField] private VrStylusHandler stylusHandler;
 		[SerializeField] MeshCollider meshCollider;

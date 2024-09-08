@@ -117,7 +117,7 @@ namespace _Project.Scripts
 		}
 
 		[Button]
-		void ResetTexture() => modifier.ResetTexture();
+		public void ResetTexture() => modifier.ResetTexture();
 
 		[Button]
 		private void EraseAllGroups()

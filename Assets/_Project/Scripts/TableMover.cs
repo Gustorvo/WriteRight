@@ -26,7 +26,7 @@ namespace _Project.Scripts
 
             float deltaY = Mathf.Abs(transform.position.y - pos.y + offsetY);
            
-            if (deltaY > 0.001f)
+            if (deltaY > 0.0001f)
             {
                 transform.position = new Vector3(transform.position.x, pos.y + offsetY, transform.position.z);
             }
