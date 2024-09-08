@@ -56,7 +56,12 @@ public class BeaverController : MonoBehaviour
 		PlayStep(BeaverState.Introduction);
 	}
 
-	public AudioClip GetAudioForLevel(int level) => instrucionClips[level];
+	public AudioClip GetAudioForLevel(int level)
+	{
+		if (level >= instrucionClips.Count)
+			return null;
+		return instrucionClips[level];
+	}
 
 	public void PlayStep(BeaverState state)
 	{
@@ -73,7 +78,8 @@ public class BeaverController : MonoBehaviour
 		if (state == BeaverState.Introduction)
 		{
 			audioSource.clip = GetAudioForLevel(level);
-			audioSource.Play();
+			if (audioSource.clip != null)
+				audioSource.Play();
 		}
 
 		if (state == BeaverState.Success)

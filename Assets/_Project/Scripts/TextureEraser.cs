@@ -56,6 +56,8 @@ namespace _Project.Scripts
 			if (currentLevel == 4)
 			{
 				Debug.LogError("Max level reached");
+				ResetTexture();
+				//Application.Quit();
 				return;
 			}
 
