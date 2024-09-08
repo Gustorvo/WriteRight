@@ -1,4 +1,5 @@
 using System;
+using DG.Tweening;
 using UnityEngine;
 using Object = UnityEngine.Object;
 
@@ -9,6 +10,7 @@ namespace _Project.Scripts
 	{
 		public Transform a;
 		public Transform b;
+		public float Distance => Vector3.Distance(a.position, b.position);
 
 		public Waypoints(Vector3 posA, Vector3 posB, Transform parent)
 		{
@@ -16,8 +18,6 @@ namespace _Project.Scripts
 			a.position = posA;
 			b = new GameObject("B").transform;
 			b.position = posB;
-			//a.SetParent(parent, false);
-			//b.SetParent(parent, false);
 		}
 
 		public void SetA(Vector3 posA)
@@ -37,7 +37,7 @@ namespace _Project.Scripts
 		}
 	}
 
-	public enum CurrentPair
+	public enum PairNumber
 	{
 		First,
 		Second,
@@ -46,21 +46,25 @@ namespace _Project.Scripts
 
 	public class A4 : MonoBehaviour
 	{
+		[SerializeField] AnimationCurve tracingCurve;
 		[SerializeField] private Transform traicingSphere;
 		[SerializeField] private float maxDelta = 0.003f;
 		[SerializeField] private Waypoints firstPair, secondPair, thirdPair;
 		[SerializeField] private Transform waipointsParent;
+
+		public event Action OnComplete;
 		private TextureEraser textureEraser;
 		private TipPosition tipPosition;
 
-		private CurrentPair currentPair = CurrentPair.First;
-		private Waypoints currentWaypoint;
+		private PairNumber currentPair = PairNumber.First;
+		private Waypoints dynamicWaypoint;
 
 		private float heightOffset;
+		private Tween tracingTween;
 
 		private void Awake()
 		{
-			currentWaypoint = new Waypoints(Vector3.zero, Vector3.zero, waipointsParent);
+			dynamicWaypoint = new Waypoints(Vector3.zero, Vector3.zero, waipointsParent);
 			textureEraser = FindObjectOfType<TextureEraser>();
 			tipPosition = FindObjectOfType<TipPosition>();
 			if (textureEraser != null)
@@ -80,39 +84,77 @@ namespace _Project.Scripts
 			tipPosition.OnTipCollisionEnd += OnTipCollisionEnd;
 		}
 
+		private void Start()
+		{
+			currentPair = PairNumber.First;
+			// start tweening the traicingSphere between A and B
+			StartTracingTween();
+			tracingTween.OnKill(() => traicingSphere.gameObject.SetActive(false));
+		}
+
+		private void StartTracingTween()
+		{
+			var target = GetCurrentWaypoint();
+			traicingSphere.position = target.a.position;
+			traicingSphere.gameObject.SetActive(true);
+			tracingTween = traicingSphere.DOMove(target.b.position, 1.5f).SetLoops(-1, LoopType.Restart)
+				.SetEase(tracingCurve);
+		}
+
 
 		private void OnTipCollisionStart(Vector3 pos)
 		{
+			tracingTween.Kill();
+			traicingSphere.position = GetCurrentWaypoint().b.position;
 			ResetPositions();
-			currentWaypoint.SetA(pos);
+			dynamicWaypoint.SetA(pos);
 		}
 
 		private void OnTipCollisionEnd(Vector3 pos)
 		{
-			currentWaypoint.SetB(pos);
+			dynamicWaypoint.SetB(pos);
 
-			// get the distance between waypoints
-			Waypoints target = currentPair == CurrentPair.First ? firstPair :
-				currentPair == CurrentPair.Second ? secondPair : thirdPair;
+			var target = GetCurrentWaypoint();
 
-			float a2a = GetXZDistance(currentWaypoint.a.position, target.a.position);
-			float b2b = GetXZDistance(currentWaypoint.b.position, target.b.position);
+			float a2a = GetXZDistance(dynamicWaypoint.a.position, target.a.position);
+			float b2b = GetXZDistance(dynamicWaypoint.b.position, target.b.position);
+			float a2b = GetXZDistance(dynamicWaypoint.a.position, dynamicWaypoint.b.position);
+
+			PairNumber nextPair = currentPair == PairNumber.First ? PairNumber.Second : PairNumber.Third;
 			Debug.Log("a2a: " + a2a + " b2b: " + b2b);
 			if (a2a > maxDelta || b2b > maxDelta)
 			{
 				textureEraser.ResetTexture();
-				currentPair = CurrentPair.First;
+				currentPair = PairNumber.First;
 			}
 			else
 			{
-				currentPair = CurrentPair.First == currentPair ? CurrentPair.Second : CurrentPair.Third;
+				bool reachedTheEnd = nextPair == currentPair;
+				if (reachedTheEnd)
+				{
+					OnComplete?.Invoke();
+					traicingSphere.gameObject.SetActive(false);
+					return;
+				}
+
+				currentPair = nextPair;
 			}
+
+			StartTracingTween();
+		}
+
+		private Waypoints GetCurrentWaypoint()
+		{
+			// get the distance between waypoints
+			Waypoints target = currentPair == PairNumber.First ? firstPair :
+				currentPair == PairNumber.Second ? secondPair : thirdPair;
+			return target;
 		}
 
 		private void ResetPositions()
 		{
-			currentWaypoint.SetA(default);
-			currentWaypoint.SetB(default);
+			dynamicWaypoint.SetA(default);
+			dynamicWaypoint.SetB(default);
 		}
 
 		private void OnDestroy()
