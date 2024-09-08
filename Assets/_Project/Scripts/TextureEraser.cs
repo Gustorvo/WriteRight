@@ -113,12 +113,8 @@ namespace _Project.Scripts
 			}
 			else
 			{
-				Debug.LogError("modifier should not be null");
-				InitWithDefaultTexture();
+				Debug.LogWarning("modifier is not ready");
 			}
-
-			//collision.SetCollider(meshTransform);
-			Debug.Log("Texture erazer: mesh renderer initialized");
 		}
 
 		[Button]

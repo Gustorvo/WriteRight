@@ -22,6 +22,7 @@ namespace _Project.Scripts
 		public event Action<Vector3> OnTipCollision;
 		public event Action<Vector3> OnTipCollisionStart;
 		public event Action<Vector3> OnTipCollisionEnd;
+		public event Action<float> OnPenIsOnHorizontalSurface; // will be called when pen is on horizontal surface with the surface Y position
 		private Vector3 heightOffset => Vector3.up * 0.01f;
 
 		private bool startAdding;

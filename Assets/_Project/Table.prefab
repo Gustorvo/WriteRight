@@ -3236,7 +3236,6 @@ MonoBehaviour:
   instrucionClips:
   - {fileID: 8300000, guid: e1b03e0d5bce4dd419a9ec01c3c01082, type: 3}
   - {fileID: 8300000, guid: 1c2f5cb58825b334b965c46b73f6b773, type: 3}
-  - {fileID: 8300000, guid: 9d60625c03851a045b9048d00a336d98, type: 3}
   - {fileID: 8300000, guid: 55503e709a4fcd24e865ea42e697e608, type: 3}
   - {fileID: 8300000, guid: 755eecff87e094d4e85a7f7b55f4d2a8, type: 3}
   currentState: 0
@@ -3296,7 +3295,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
