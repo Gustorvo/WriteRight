@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using _Project.Scripts;
 using NaughtyAttributes;
 using UnityEngine;
 using UnityEngine.Assertions;
@@ -22,6 +23,7 @@ public class BeaverController : MonoBehaviour
 
 	[SerializeField] List<AudioClip> instrucionClips;
 
+	public static event Action<BeaverState> OnBeaverStateChange;
 	public BeaverState currentState = BeaverState.None;
 	private bool wasAudioPlaying = false;
 	private int level = 0;
@@ -29,6 +31,17 @@ public class BeaverController : MonoBehaviour
 	private void Awake()
 	{
 		Assert.IsNotNull(animator);
+		A4.OnLetterWritten += LetterWritten;
+	}
+
+	private void OnDestroy()
+	{
+		A4.OnLetterWritten -= LetterWritten;
+	}
+
+	private void LetterWritten()
+	{
+		PlayStep(BeaverState.Success);
 	}
 
 	private void Start()
@@ -42,8 +55,8 @@ public class BeaverController : MonoBehaviour
 	public void PlayStep(BeaverState state)
 	{
 		// get the step from list
-	
-		if (state  == BeaverState.None)
+
+		if (state == BeaverState.None)
 		{
 			Debug.LogError("Beaver: No step found for state " + state);
 			return;
@@ -61,6 +74,7 @@ public class BeaverController : MonoBehaviour
 		}
 
 		currentState = state;
+		OnBeaverStateChange?.Invoke(state);
 	}
 
 	private void Update()
@@ -99,10 +113,16 @@ public class BeaverController : MonoBehaviour
 
 	private void StopCurrentAndTriggerNext()
 	{
+		var next = currentState + 1;
+
+		//return and wait for the letter to be written
+		if (next == BeaverState.Success) return;
+		
 		animator.ResetTrigger(currentState.ToString());
 		animator.StopPlayback();
 		// play the next step
-		var next = currentState + 1;
+
+
 		if ((int)next < System.Enum.GetValues(typeof(BeaverState)).Length)
 		{
 			Debug.Log("Next step is triggered: " + next);

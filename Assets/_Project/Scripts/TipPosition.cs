@@ -16,7 +16,6 @@ namespace _Project.Scripts
 		private Vector2 uvPosition;
 		private Vector3 lastHitNormal;
 		private Vector3 meshNormal;
-		private Collider[] hitColliders = new Collider[3] { null, null, null };
 		private bool init;
 		private bool wasCollidingLastFrame;
 		public Vector2 Get() => TryMeshCastBidirectional(out uvPosition) ? uvPosition : default;
@@ -26,6 +25,22 @@ namespace _Project.Scripts
 		private Vector3 heightOffset => Vector3.up * 0.01f;
 
 		private bool startAdding;
+		private bool startTakingTipInput;
+
+		private void Awake()
+		{
+			BeaverController.OnBeaverStateChange += BeaverStateChange;
+		}
+
+		private void OnDestroy()
+		{
+			BeaverController.OnBeaverStateChange -= BeaverStateChange;
+		}
+
+		private void BeaverStateChange(BeaverState state)
+		{
+			startTakingTipInput = state == BeaverState.Idle;
+		}
 
 		public void InitMeshCollider(MeshCollider collider)
 		{
@@ -35,6 +50,7 @@ namespace _Project.Scripts
 
 		private void FixedUpdate()
 		{
+			if (!startTakingTipInput) return;
 			// check if tip is touching a surface
 			float tip = stylusHandler.CurrentState.tip_value;
 			if (tip > 0.0001f)

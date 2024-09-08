@@ -52,7 +52,7 @@ namespace _Project.Scripts
 		[SerializeField] private Waypoints firstPair, secondPair, thirdPair;
 		[SerializeField] private Transform waipointsParent;
 
-		public event Action OnComplete;
+		public static event Action OnLetterWritten;
 		private TextureEraser textureEraser;
 		private TipPosition tipPosition;
 
@@ -61,6 +61,7 @@ namespace _Project.Scripts
 
 		private float heightOffset;
 		private Tween tracingTween;
+		private BeaverState beaverState;
 
 		private void Awake()
 		{
@@ -82,14 +83,23 @@ namespace _Project.Scripts
 
 			tipPosition.OnTipCollisionStart += OnTipCollisionStart;
 			tipPosition.OnTipCollisionEnd += OnTipCollisionEnd;
+			BeaverController.OnBeaverStateChange += BeaverStateChange;
+		}
+
+		private void BeaverStateChange(BeaverState newState)
+		{
+			beaverState = newState;
+			if (beaverState == BeaverState.Idle)
+			{
+				currentPair = PairNumber.First;
+				StartTracingTween();
+			}
 		}
 
 		private void Start()
 		{
+			traicingSphere.gameObject.SetActive(false);
 			currentPair = PairNumber.First;
-			// start tweening the traicingSphere between A and B
-			StartTracingTween();
-			tracingTween.OnKill(() => traicingSphere.gameObject.SetActive(false));
 		}
 
 		private void StartTracingTween()
@@ -132,7 +142,7 @@ namespace _Project.Scripts
 				bool reachedTheEnd = nextPair == currentPair;
 				if (reachedTheEnd)
 				{
-					OnComplete?.Invoke();
+					OnLetterWritten?.Invoke();
 					traicingSphere.gameObject.SetActive(false);
 					return;
 				}
@@ -162,6 +172,7 @@ namespace _Project.Scripts
 			tipPosition.OnTipCollision -= OnTipCollision;
 			tipPosition.OnTipCollisionStart -= OnTipCollisionStart;
 			tipPosition.OnTipCollisionEnd -= OnTipCollisionEnd;
+			BeaverController.OnBeaverStateChange -= BeaverStateChange;
 		}
 
 		private void OnTipCollision(Vector3 obj)

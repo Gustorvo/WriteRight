@@ -5599,15 +5599,12 @@ MonoBehaviour:
   firstPair:
     a: {fileID: 2632049409347383055}
     b: {fileID: 3289263867280021411}
-    Distance: 0
   secondPair:
     a: {fileID: 2632049409347383055}
     b: {fileID: 5471836862073632179}
-    Distance: 0
   thirdPair:
     a: {fileID: 2466725974990130989}
     b: {fileID: 6636199895231108460}
-    Distance: 0
   waipointsParent: {fileID: 8542499742414398884}
 --- !u!1 &6122215566971575784
 GameObject:

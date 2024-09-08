@@ -1356,7 +1356,10 @@ MonoBehaviour:
   saveTextureOnExit: 0
   savePath: Assets/_Project/Paint/SavedTextures/ModifiedTexture.png
   levelTextures:
+  - {fileID: 2800000, guid: a110aa45041b15847b2a7f62829b329f, type: 3}
+  - {fileID: 2800000, guid: 276843fcc513a784badf874dc62a1a47, type: 3}
   - {fileID: 2800000, guid: 01db518a1876a154e850a6a6db36f5e2, type: 3}
+  - {fileID: 2800000, guid: 38701e781b842194f9293de5419ff1ae, type: 3}
 --- !u!1773428102 &165585588
 ParentConstraint:
   m_ObjectHideFlags: 0
@@ -1396,7 +1399,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b17b6dc87b0346b79c2f33cf66c29e48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tipOffset: 0
   tipTransform: {fileID: 165585585}
   stylusHandler: {fileID: 729343581}
   meshCollider: {fileID: 0}

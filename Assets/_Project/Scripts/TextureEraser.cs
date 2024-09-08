@@ -39,24 +39,35 @@ namespace _Project.Scripts
 		public event Action OnAllGroupsErased;
 
 		private TipPosition tip;
-
-
-		private void Start()
-		{
-			InitWithDefaultTexture();
-		}
+		private int currentLevel = 0;
+		
 
 		private void Awake()
 		{
 			tip = GetComponent<TipPosition>();
 			tip.OnTipCollisionEnd += OnTipCollisionEnd;
+			BeaverController.OnBeaverStateChange += LevelUp;
+		}
+
+		private void LevelUp(BeaverState state)
+		{
+			if (state != BeaverState.Idle) return;
+			currentLevel += 1;
+			if (currentLevel == 4)
+			{
+				Debug.LogError("Max level reached");
+				return;
+			}
+
+			SetTargetTextureForLevel(currentLevel);
+			InitMeshRenderer(meshRenderer.transform);
 		}
 
 		private void OnTipCollisionEnd(Vector3 obj)
 		{
 			float transparent = 0;
 			float opaque = 0;
-			
+
 			modifier.AnalyzeTransparency(out transparent, out opaque);
 			Debug.Log("TraErrornsparent: " + transparent + " Opaque: " + opaque);
 		}
@@ -150,7 +161,7 @@ namespace _Project.Scripts
 		{
 			modifier.OnGroupErased -= CheckGroupsErased;
 			tip.OnTipCollisionEnd -= OnTipCollisionEnd;
-
+			BeaverController.OnBeaverStateChange -= LevelUp;
 		}
 
 		private IEnumerator CheckGroupsErasedCoroutine()
