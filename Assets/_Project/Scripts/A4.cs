@@ -1,5 +1,6 @@
 using System;
 using DG.Tweening;
+using NaughtyAttributes;
 using UnityEngine;
 using Object = UnityEngine.Object;
 
@@ -102,6 +103,7 @@ namespace _Project.Scripts
 			currentPair = PairNumber.First;
 		}
 
+		[Button]
 		private void StartTracingTween()
 		{
 			var target = GetCurrentWaypoint();
@@ -110,6 +112,8 @@ namespace _Project.Scripts
 			tracingTween = traicingSphere.DOMove(target.b.position, 1.5f).SetLoops(-1, LoopType.Restart)
 				.SetEase(tracingCurve);
 		}
+		[Button]
+		void StopTraicing() => tracingTween.Kill();
 
 
 		private void OnTipCollisionStart(Vector3 pos)
@@ -132,7 +136,7 @@ namespace _Project.Scripts
 
 			PairNumber nextPair = currentPair == PairNumber.First ? PairNumber.Second : PairNumber.Third;
 			Debug.Log("a2a: " + a2a + " b2b: " + b2b);
-			if (a2a > maxDelta || b2b > maxDelta)
+			if (a2a > maxDelta || b2b > maxDelta || a2b > target.Distance + maxDelta * 2f)
 			{
 				textureEraser.ResetTexture();
 				currentPair = PairNumber.First;

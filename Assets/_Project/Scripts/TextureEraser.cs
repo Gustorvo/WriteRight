@@ -40,7 +40,7 @@ namespace _Project.Scripts
 
 		private TipPosition tip;
 		private int currentLevel = 0;
-		
+
 
 		private void Awake()
 		{
@@ -113,6 +113,7 @@ namespace _Project.Scripts
 			}
 			else
 			{
+				meshRenderer.material.mainTexture = null;
 				Debug.LogWarning("modifier is not ready");
 			}
 		}
