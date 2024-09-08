@@ -13,6 +13,9 @@ public class VrStylusHandler : StylusHandler
     [SerializeField] private GameObject _right_touch_controller;
 
     private bool _inUiInteraction = false;
+    private float timeInterval = 0.0f;
+    private Vector3 _previousPositionInTime;
+    private Quaternion _previousRotationInTime;
 
     public bool InUiInteraction
     {

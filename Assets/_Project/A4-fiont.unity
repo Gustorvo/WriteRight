@@ -3967,6 +3967,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MX_Ink
       objectReference: {fileID: 0}
+    - target: {fileID: 1077171487981709975, guid: cb1310f64dd794703964833b63e87d96, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1857229286467065778, guid: cb1310f64dd794703964833b63e87d96, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

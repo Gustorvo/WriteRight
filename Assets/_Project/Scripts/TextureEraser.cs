@@ -46,12 +46,12 @@ namespace _Project.Scripts
 		{
 			tip = GetComponent<TipPosition>();
 			tip.OnTipCollisionEnd += OnTipCollisionEnd;
-			BeaverController.OnBeaverStateChange += LevelUp;
+			//BeaverController.OnBeaverStateChange += LevelUp;
 		}
 
-		private void LevelUp(BeaverState state)
+		public void LevelUp()
 		{
-			if (state != BeaverState.Idle) return;
+			//if (state != BeaverState.Idle) return;
 			currentLevel += 1;
 			if (currentLevel == 4)
 			{
@@ -108,13 +108,14 @@ namespace _Project.Scripts
 			{
 				// mesh texture has changed, we need to re-initialized the modifier
 				// reassign mesh renderer's texture
+				Debug.Log("Setting new texture");
 				meshRenderer.material.mainTexture = modifier.texture;
 				initialized = true;
 			}
 			else
 			{
 				meshRenderer.material.mainTexture = null;
-				Debug.LogWarning("modifier is not ready");
+				Debug.LogError("modifier is not ready");
 			}
 		}
 
@@ -158,7 +159,7 @@ namespace _Project.Scripts
 		{
 			modifier.OnGroupErased -= CheckGroupsErased;
 			tip.OnTipCollisionEnd -= OnTipCollisionEnd;
-			BeaverController.OnBeaverStateChange -= LevelUp;
+			//BeaverController.OnBeaverStateChange -= LevelUp;
 		}
 
 		private IEnumerator CheckGroupsErasedCoroutine()

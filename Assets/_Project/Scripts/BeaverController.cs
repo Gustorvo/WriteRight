@@ -31,11 +31,13 @@ public class BeaverController : MonoBehaviour
 	private bool wasAudioPlaying = false;
 	private int level = 0;
 	private Coroutine transitioning;
+	private TextureEraser textureEraser;
 
 	private void Awake()
 	{
 		Assert.IsNotNull(animator);
 		A4.OnLetterWritten += LetterWritten;
+		textureEraser = FindObjectOfType<TextureEraser>();
 	}
 
 	private void OnDestroy()
@@ -90,6 +92,15 @@ public class BeaverController : MonoBehaviour
 
 		currentState = state;
 		OnBeaverStateChange?.Invoke(state);
+		if (currentState == BeaverState.Idle)
+		{
+			if (leveledUp)
+				leveledUp = false;
+			else
+			{
+				textureEraser.LevelUp();
+			}
+		}
 	}
 
 	IEnumerator DelayCoroutine(float time, Action callback)
@@ -106,13 +117,26 @@ public class BeaverController : MonoBehaviour
 		animator.SetTrigger(state.ToString());
 	}
 
+
+	private bool leveledUp;
+
 	private void Update()
 	{
 		if (transitioning != null) return;
+
+
 		// check the progress of audio
 		if (audioSource.isPlaying)
 		{
-			if (currentState == BeaverState.Success) return;
+			if (!leveledUp && currentState == BeaverState.Introduction && audioSource.time >= 24f)
+			{
+				// show the A4
+				textureEraser.LevelUp();
+				leveledUp = true;
+			}
+
+			if (currentState == BeaverState.Success)
+				return; // we're playing an audio here so we don't wanna the audio to trigger the next step but rather depend on the animation 
 			wasAudioPlaying = true;
 			return;
 		}

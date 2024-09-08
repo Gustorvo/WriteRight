@@ -157,6 +157,13 @@ namespace _Project.Scripts
 			StartTracingTween();
 		}
 
+		[Button]
+		private void DebugEnd()
+		{
+			OnLetterWritten?.Invoke();
+			traicingSphere.gameObject.SetActive(false);
+		}
+
 		private Waypoints GetCurrentWaypoint()
 		{
 			// get the distance between waypoints

@@ -40183,7 +40183,7 @@ MonoBehaviour:
   audioSource: {fileID: 5787267091412098909}
   animator: {fileID: 668527787119696267}
   instrucionClips:
-  - {fileID: 8300000, guid: a3922b5ac92afc8469011332d3922f9b, type: 3}
+  - {fileID: 8300000, guid: e1b03e0d5bce4dd419a9ec01c3c01082, type: 3}
   - {fileID: 8300000, guid: 1c2f5cb58825b334b965c46b73f6b773, type: 3}
   - {fileID: 8300000, guid: c6dac0b990c68474abdcd3e573c515c9, type: 3}
   - {fileID: 8300000, guid: 755eecff87e094d4e85a7f7b55f4d2a8, type: 3}
